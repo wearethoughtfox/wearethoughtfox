@@ -1,0 +1,33 @@
+{
+  "name": "ashbright",
+  "version": "0.0.1",
+  "description": "Site using Jekyll, GulpJS, SASS & BrowserSync",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robert Carroll",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.3.7",
+    "gulp": "^3.8.8",
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/wearethoughtfox/ashbright.git"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ],
+  "bugs": {
+    "url": "http://github.com/wearethoughtfox/ashbright/issues"
+  },
+  "homepage": "http://github.com/wearethoughtfox/ashbright"
+}

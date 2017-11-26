@@ -1,0 +1,37 @@
+name: Ashbright
+markdown: kramdown
+highlighter: rouge
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+# Setup
+title:               Ashbright
+description:         'We are strategic communications firm that provides counsel to governments, companies and successful individuals.'
+tagline:             Strategic communication
+url:                 https://www.ashbright.com
+logo:                /images/LOGO-RGB.png
+tel:                 +971502206916
+email:               ta@ashbright.com
+calltoaction:        "Get in touch"
+address:
+  name:              ASHBRIGHT DWC-LLC
+  region:            Dubai
+  postcode:          712472
+  country:           UAE
+
+collections:
+  situations:
+    output: true
+    permalink: /:collection/:name
+  bios:
+    output: true
+    permalink: /:name
+
+plugins:
+  - jekyll-seo-tag
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/LOGO-RGB.png

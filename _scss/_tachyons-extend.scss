@@ -1,0 +1,129 @@
+//font-family
+body {
+  font-family: 'PT Serif', Georgia, Times, Times New Roman, serif;
+}
+
+h1,.h1,
+h2,.h2,
+h3,
+.h3,
+h4,
+.h4,
+.ash-sans {
+    font-family: 'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+//_type-scale
+html {
+  font-size: $root-font-size;
+  line-height: $root-line-height;
+}
+
+.f-head { font-size: 2.5rem; }
+.f-sub { font-size: 2rem; }
+
+h1,.f1 { font-size: 2rem; }
+h2,.f2 { font-size: 1.5rem; }
+h3,.f3 { font-size: 1.25rem; }
+h4,.f4 { font-size: 1rem; }
+
+@media #{$breakpoint-not-small}{
+  .f-head-ns { font-size: 3rem; }
+  .f-sub-ns { font-size: 2rem; }
+  .f1-ns { font-size: 2rem; }
+  .f2-ns { font-size: 1.5rem; }
+  .f3-ns { font-size: 1.25rem; }
+  .f4-ns { font-size: 1rem; }
+}
+
+@media #{$breakpoint-medium} {
+  .f-head-m { font-size: 3rem; }
+  .f-sub-m { font-size: 2rem; }
+  .f1-m { font-size: 2rem; }
+  .f2-m { font-size: 1.5rem; }
+  .f3-m { font-size: 1.25rem; }
+  .f4-m { font-size: 1rem; }
+}
+
+@media #{$breakpoint-large} {
+  .f-head-l { font-size: 3rem; }
+  .f-sub-l { font-size: 2rem; }
+  .f1-l { font-size: 2rem; }
+  .f2-l { font-size: 1.5rem; }
+  .f3-l { font-size: 1.25rem; }
+  .f4-l { font-size: 1rem; }
+}
+
+
+//_border-colors
+.b--ashblue { border-color: $link-color; }
+.b--ashgrey { border-color: $border-color; }
+.b--ashdarkgrey { border-color: $body-color; }
+
+//_skins
+.ashblue { color: $link-color; }
+.ashgrey { color: $border-color; }
+.ashdarkgrey { color: $body-color; }
+
+.bg-ashblue { background-color: $link-color; }
+.bg-ashgrey { background-color: $border-color; }
+.bg-ashdarkgrey { background-color: $body-color; }
+
+//skins-pseudo
+
+.hover-ashblue:hover { color: $link-color; }
+.hover-ashblue:focus { color: $link-color; }
+
+//_typography
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  line-height: 1.25;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+}
+
+//_max-widths
+.mw4-5  {  max-width: 12rem; }
+
+// columns
+
+.col2 {
+  column-count: 2;
+  column-gap: 2em;
+}
+
+.bio-content p {
+  @extend .pb3;
+}
+
+p a {
+  @extend .ashblue;
+  @extend .dim;
+}
+
