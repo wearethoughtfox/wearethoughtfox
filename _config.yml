@@ -14,12 +14,12 @@ email:               hello@wearethoughtfox.com
 calltoaction:        "Get in touch"
 
 collections:
-  situations:
+  work:
     output: true
     permalink: /:collection/:name
-  bios:
+  blog:
     output: true
-    permalink: /:name
+    permalink: /:collection/:name
 
 plugins:
   - jekyll-seo-tag
