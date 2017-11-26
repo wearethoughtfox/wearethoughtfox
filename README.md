@@ -36,3 +36,17 @@ To install on Netlify, follow these instructions:
 2. Accessibility: http://a11yproject.com/checklist.html / http://pa11y.org
 3. Get permalinks working locally - no .html
 4. Critical CSS generator
+5. Strikethrough hover https://codepen.io/tsimenis/pen/BKdENX
+6. Text animation
+
+## Work - To add
+- MEN
+- WorldSkills AD
+- WorldSkills AD features
+- WorldSkills map
+- ICC Beta
+- Barjeel app
+- MSN
+- REC
+- Amnesty DP maps
+- Amnesty BRAVE
