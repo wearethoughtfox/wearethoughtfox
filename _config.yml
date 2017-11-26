@@ -1,22 +1,17 @@
-name: Ashbright
+name: We Are Thought Fox
 markdown: kramdown
 highlighter: rouge
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Setup
-title:               Ashbright
+title:               We Are Thought Fox
 description:         'We are strategic communications firm that provides counsel to governments, companies and successful individuals.'
 tagline:             Strategic communication
-url:                 https://www.ashbright.com
+url:                 https://www.wearethoughtfox.com
 logo:                /images/LOGO-RGB.png
-tel:                 +971502206916
-email:               ta@ashbright.com
+tel:                 +971552810637
+email:               hello@wearethoughtfox.com
 calltoaction:        "Get in touch"
-address:
-  name:              ASHBRIGHT DWC-LLC
-  region:            Dubai
-  postcode:          712472
-  country:           UAE
 
 collections:
   situations:

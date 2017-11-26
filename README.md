@@ -1,2 +1,38 @@
 # wearethoughtfox
-New company website using Jekyll
+New company website using Jekyll, Tachyons and Netlify
+
+## SEO tags
+Provided by https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+
+## Animation on scroll examples
+https://codepen.io/michalsnik/pen/WxNdvq
+
+## Smooth scroll
+https://github.com/alicelieutier/smoothScroll
+
+## Scroll to top button
+https://www.shareicon.net/arrow-up-app-ui-essential-884106
+
+## Process
+1. npm install for gulp dependancies
+2. Customise _config.yml
+3. Customise admin/config.yml
+4. Customise _scss/_variables
+5. Generate favicons: https://realfavicongenerator.net
+6. Google Analytics
+7. Google Webmaster
+8. Sitemaps
+
+## Netlify set up
+To install on Netlify, follow these instructions:
+- https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/#netlifystart
+- Don't forget to `bundle install` to install the Ruby dependencies
+- https://www.netlifycms.org/docs/intro/
+- https://www.netlifycms.org/docs/editorial-workflow/
+- Use Github for authentication https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider
+
+## To do
+1. Image gulp process workflow
+2. Accessibility: http://a11yproject.com/checklist.html / http://pa11y.org
+3. Get permalinks working locally - no .html
+4. Critical CSS generator
