@@ -2,7 +2,12 @@ $root-font-size: 18px;
 $root-line-height: 1.5;
 $body-color: #515151;
 $body-bg: #fff;
-$link-color: #B9CCE9;
-$border-color: #C6C8CA;
+$primary-color: #E75253;
+$secondary-color: #515E67;
+$grey-color: #eeeff0;
+
+$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
+$breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 50em)' !default;
+$breakpoint-large: 'screen and (min-width: 50em)' !default;
 
 
