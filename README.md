@@ -22,6 +22,8 @@ https://www.shareicon.net/arrow-up-app-ui-essential-884106
 6. Google Analytics
 7. Google Webmaster
 8. Sitemaps
+9. Customise gulp for folders for Jekyll build
+10. Jekyll layouts and includes
 
 ## Netlify set up
 To install on Netlify, follow these instructions:

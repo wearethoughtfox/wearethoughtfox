@@ -1,6 +1,6 @@
 //font-family
 body {
-  font-family: 'PT Serif', Georgia, Times, Times New Roman, serif;
+  @extend .sans-serif;
 }
 
 h1,.h1,
@@ -8,9 +8,8 @@ h2,.h2,
 h3,
 .h3,
 h4,
-.h4,
-.ash-sans {
-    font-family: 'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+.h4 {
+   @extend .sans-serif;
 }
 
 p {
@@ -24,8 +23,8 @@ html {
   line-height: $root-line-height;
 }
 
-.f-head { font-size: 2.5rem; }
-.f-sub { font-size: 2rem; }
+.f-headline { font-size: 6rem; }
+.f-subheadline { font-size: 5rem;}
 
 h1,.f1 { font-size: 2rem; }
 h2,.f2 { font-size: 1.5rem; }
@@ -33,8 +32,8 @@ h3,.f3 { font-size: 1.25rem; }
 h4,.f4 { font-size: 1rem; }
 
 @media #{$breakpoint-not-small}{
-  .f-head-ns { font-size: 3rem; }
-  .f-sub-ns { font-size: 2rem; }
+  .f-headline-ns { font-size: 6rem; }
+  .f-subheadline-ns { font-size: 5rem;}
   .f1-ns { font-size: 2rem; }
   .f2-ns { font-size: 1.5rem; }
   .f3-ns { font-size: 1.25rem; }
@@ -42,8 +41,8 @@ h4,.f4 { font-size: 1rem; }
 }
 
 @media #{$breakpoint-medium} {
-  .f-head-m { font-size: 3rem; }
-  .f-sub-m { font-size: 2rem; }
+  .f-headline-m { font-size: 6rem; }
+  .f-subheadline-m { font-size: 5rem;}
   .f1-m { font-size: 2rem; }
   .f2-m { font-size: 1.5rem; }
   .f3-m { font-size: 1.25rem; }
@@ -51,8 +50,8 @@ h4,.f4 { font-size: 1rem; }
 }
 
 @media #{$breakpoint-large} {
-  .f-head-l { font-size: 3rem; }
-  .f-sub-l { font-size: 2rem; }
+  .f-headline-l { font-size: 6rem; }
+  .f-subheadline-l { font-size: 5rem;}
   .f1-l { font-size: 2rem; }
   .f2-l { font-size: 1.5rem; }
   .f3-l { font-size: 1.25rem; }
@@ -61,23 +60,23 @@ h4,.f4 { font-size: 1rem; }
 
 
 //_border-colors
-.b--ashblue { border-color: $link-color; }
-.b--ashgrey { border-color: $border-color; }
-.b--ashdarkgrey { border-color: $body-color; }
+.b--primary { border-color: $primary-color }
+.b--secondary { border-color: $secondary-color; }
+.b--customgrey { border-color: $grey-color; }
 
 //_skins
-.ashblue { color: $link-color; }
-.ashgrey { color: $border-color; }
-.ashdarkgrey { color: $body-color; }
+.primary { color: $primary-color }
+.secondary { color: $secondary-color; }
+.customgrey { color: $grey-color; }
 
-.bg-ashblue { background-color: $link-color; }
-.bg-ashgrey { background-color: $border-color; }
-.bg-ashdarkgrey { background-color: $body-color; }
+.bg-ashblue { background-color: $primary-color }
+.bg-secondary { background-color: $secondary-color; }
+.bg-customgrey { background-color: $grey-color; }
 
 //skins-pseudo
 
-.hover-ashblue:hover { color: $link-color; }
-.hover-ashblue:focus { color: $link-color; }
+.hover-primary:hover { color: $primary-color; }
+.hover-primary:focus { color: $primary-color; }
 
 //_typography
 html,
@@ -123,7 +122,7 @@ h3 {
 }
 
 p a {
-  @extend .ashblue;
+  @extend .primary;
   @extend .dim;
 }
 

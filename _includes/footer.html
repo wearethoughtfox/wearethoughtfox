@@ -1,5 +1,5 @@
-<footer class="bg-ashblue pt2 pb2 pb5-l" id="fadein-backtotop">
-  <div class = "bt b--ashdarkgrey tc tl-l pt4-l">
+<footer class="bg-secondary pt2 pb2 pb5-l" id="fadein-backtotop">
+  <div class = "bt b--customgrey tc tl-l pt4-l">
   <div id="contact" class="mw6 mw7-ns center pt4 tc fr-l pr5-l">
     <span itemscope itemtype="http://schema.org/Corporation">
       <span class="dn" itemprop="name">{{ site.name }}</span>
@@ -8,16 +8,8 @@
       <span itemprop="telephone">
         <a class="ash-sans f5 f3-ns link dim ph3 ph4-l pv2 mb4 ml3-ns dib white bg-ashdarkgrey ttu tracked" href="tel:{{ site.tel }}">{{ site.tel }}</a>
       </span>
-
-      <span class="f4 db lh-copy ttu pb4 pb0-l ph2 ph0-ns tr-l tracked ash-sans" itemscope itemtype="http://schema.org/PostalAddress">
-         <span itemprop="name">{{ site.address.name }}</span>,
-         PO Box<span itemprop="postOfficeBoxNumber"> {{ site.address.postcode }}</span>,
-         <span itemprop="addressRegion"> {{ site.address.region }}</span>,
-         <span itemprop="addressCountry"> {{ site.address.country }}</span>
-      </span>
-    </span>
   </div>
-    <img class="mw4-5 mb4 mb0-l mt2-l ml1-l" src="{{ site.baseurl }}/images/LOGO-RGB.png" alt="Ashbright" >
+    <img class="mw4-5 mb4 mb0-l mt2-l ml4-l" src="{{ site.baseurl }}/images/logo.png" alt="{{ site.name }}" >
   </div>
 
   <a href="#" class="back-to-top fixed bottom-1 right-1" data-aos="fade-left"
