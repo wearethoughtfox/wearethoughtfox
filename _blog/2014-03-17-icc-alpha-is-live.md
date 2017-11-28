@@ -3,7 +3,7 @@ id: 832
 title: ICC Alpha is live
 date: 2014-03-17T16:20:00+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/blog/icc-alpha-is-live/
 permalink: /blog/icc-alpha-is-live/
 tumblr_new-icc_permalink:

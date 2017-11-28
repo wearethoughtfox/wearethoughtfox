@@ -3,7 +3,7 @@ id: 841
 title: Hello and welcome
 date: 2013-09-09T14:26:00+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/blog/hello-and-welcome/
 permalink: /blog/hello-and-welcome/
 tumblr_new-icc_permalink:

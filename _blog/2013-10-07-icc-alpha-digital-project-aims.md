@@ -3,7 +3,7 @@ id: 858
 title: 'ICC Alpha &#8211; Digital project aims'
 date: 2013-10-07T08:28:08+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=858
 permalink: /blog/icc-alpha-digital-project-aims/
 medium_post:

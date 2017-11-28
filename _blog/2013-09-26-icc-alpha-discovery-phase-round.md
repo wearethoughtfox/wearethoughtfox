@@ -3,7 +3,7 @@ id: 856
 title: 'ICC Alpha &#8211; Discovery phase round up'
 date: 2013-09-26T08:24:03+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=856
 permalink: /blog/icc-alpha-discovery-phase-round/
 medium_post:
@@ -16,9 +16,9 @@ tags:
 Over the last few weeks, we’ve been examining who uses the ICC website, how they use it and what they need from a new ICC website. We’ve used three main techniques:
 
 1. **Data from web analytics** &#8211; Helps to understand users, uncover usage patterns, see most popular content and use search logs to see what people are looking for.
-  
+
 2. **Web survey** &#8211; Over 400 people answered the website survey in the last few weeks.
-  
+
 3. **Telephone interviews** &#8211; We have conducted interviews with users from the different audiences from around the world including the general public, journalists, NGOs, academics, lawyers and diplomats.
 
 We’ve also talked to **representatives of the ICC organs and other stakeholders** about what they need from the website.

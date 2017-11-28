@@ -3,7 +3,7 @@ id: 776
 title: On a device-agnostic approach
 date: 2014-03-17T19:46:47+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=776
 permalink: /blog/on-a-device-agnostic-approach/
 categories:
@@ -18,7 +18,7 @@ tags:
 Only a few years ago, most people went online using a desktop or a laptop.
 
 <img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1.jpg" alt="Desktop computer" class="alignleft size-full wp-image-786" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1.jpg 640w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-580x435.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-160x120.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-600x450.jpg 600w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-400x300.jpg 400w" sizes="(max-width: 640px) 100vw, 640px" />
-  
+
 [CC Image courtesy of Rakesh Ashok on Flickr](https://flic.kr/p/7B2pRA)
 
 ## Today and beyond
@@ -83,7 +83,7 @@ Different devices and poor connections are not after-thoughts: they are at the h
 
 Progressively enhance for particular devices only when evidence of demand exists.
 
-Data structures and editorial / content decisions are the biggest issues. Technical and design issues are secondary. 
+Data structures and editorial / content decisions are the biggest issues. Technical and design issues are secondary.
 
 If we think about the content first, working on any device, all other considerations slot into place.
 
@@ -95,6 +95,6 @@ Some ways of prioritising and thinking about content in a device-agnostic projec
   2. Legibility
   3. Ease of comprehension
   4. Relevance &#8211; to the need, moment, interests, behaviour, and personal history
-  5. Everything else: Later access, ease of reference, etc</ul> 
+  5. Everything else: Later access, ease of reference, etc</ul>
 
 See [this post on responsive web publishing](http://www.aqworks.com/en/blog/2011/09/05/how-responsive-web-design-becomes-responsive-web-publishing/) for more details.

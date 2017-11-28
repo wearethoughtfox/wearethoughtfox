@@ -4,7 +4,7 @@ title: BBC Connected Studio Pilot
 date: 2013-07-11T14:44:47+00:00
 author: Rob
 excerpt: Prototyping a new way of creating digital companions from existing CBeebies characters.
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/site/?p=306
 permalink: /work/bbc-connected-studio-pilot/
 slideshow:

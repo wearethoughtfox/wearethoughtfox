@@ -3,7 +3,7 @@ id: 835
 title: User research report
 date: 2013-10-07T12:30:00+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/blog/user-research-report/
 permalink: /blog/user-research-report/
 tumblr_new-icc_permalink:

@@ -3,7 +3,7 @@ id: 763
 title: 'Ask the tribunal: a different approach to content strategy'
 date: 2012-03-23T14:32:43+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=763
 permalink: /blog/ask-the-tribunal-a-different-approach-to-content-strategy/
 categories:

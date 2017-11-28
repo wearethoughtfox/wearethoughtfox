@@ -3,7 +3,7 @@ id: 692
 title: 'Conversational UIs and bots for news and information &#8211; Part 1'
 date: 2015-06-17T09:01:03+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=692
 permalink: /blog/conversational-ui-part-1/
 categories:
@@ -14,9 +14,9 @@ tags:
   - conversational-ui
   - media
 ---
-The last couple of years have seen some great projects exploring different uses of technology and the city. [Hello Lamp Post](http://www.hellolamppost.co.uk/), which took place in Bristol during the summer of 2013, was particularly exciting. In case you haven’t seen it, here’s the idea: people send a text message to an object around the city such as a lamppost or postbox and then become part of a conversation with other people who have done the same. The main point here is that the city’s inanimate infrastructure becomes the conduit to layers of information, stories and other people without those objects actually being connected to the network. 
+The last couple of years have seen some great projects exploring different uses of technology and the city. [Hello Lamp Post](http://www.hellolamppost.co.uk/), which took place in Bristol during the summer of 2013, was particularly exciting. In case you haven’t seen it, here’s the idea: people send a text message to an object around the city such as a lamppost or postbox and then become part of a conversation with other people who have done the same. The main point here is that the city’s inanimate infrastructure becomes the conduit to layers of information, stories and other people without those objects actually being connected to the network.
 
-We were keen to explore this idea in the context of news and information. Imagine if you could build up detailed maps and information about demographics, crime, housing and schools (all from public sources) as well as timely information such as what’s on and what’s happened and then people could interact with this wealth of information about specific locations through the city’s infrastructure in playful and engaging ways. Add to this elements such as sensors, e.g. Smart Citizen project with FutureEverything, and there are some very rich and exciting things to explore &#8211; air composition (CO and NO2), temperature, light intensity, sound levels, and humidity. That was the pitch. The Manchester Evening News were also keen on the idea &#8211; in particular, how it could be used to help a news organisation to become part of the fabric of the city. 
+We were keen to explore this idea in the context of news and information. Imagine if you could build up detailed maps and information about demographics, crime, housing and schools (all from public sources) as well as timely information such as what’s on and what’s happened and then people could interact with this wealth of information about specific locations through the city’s infrastructure in playful and engaging ways. Add to this elements such as sensors, e.g. Smart Citizen project with FutureEverything, and there are some very rich and exciting things to explore &#8211; air composition (CO and NO2), temperature, light intensity, sound levels, and humidity. That was the pitch. The Manchester Evening News were also keen on the idea &#8211; in particular, how it could be used to help a news organisation to become part of the fabric of the city.
 
 ## Traditional approaches
 
@@ -50,7 +50,7 @@ So we decided to build some prototypes to explore:
 This post is part of a series about a project exploring conversational UIs for news and information to help Manchester Evening News become part of the fabric of the city.
 
 → Part 1
-  
+
 [Part 2](http://wearethoughtfox.com/blog/conversational-ui-part-2/)
-  
+
 [Part 3](http://wearethoughtfox.com/blog/conversational-uis-part-3/)

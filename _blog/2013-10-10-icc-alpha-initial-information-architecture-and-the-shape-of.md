@@ -3,7 +3,7 @@ id: 834
 title: 'ICC Alpha &#8211; Initial information architecture and the shape of the ICC alpha'
 date: 2013-10-10T15:11:00+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/blog/initial-information-architecture-and-the-shape-of/
 permalink: /blog/icc-alpha-initial-information-architecture-and-the-shape-of/
 tumblr_new-icc_permalink:
@@ -50,17 +50,17 @@ The sections for each organ, section or body will be standardised. That doesn�
 This structure &#8211; along with search and mailing lists &#8211; will form the basis for the ICC alpha:
 
 1. Cases
-  
+
 2. Search
-  
+
 3. Situations and Homepage
-  
+
 4. How the court works
-  
+
 5. Organs and bodies
-  
+
 6. Mailings lists & alerts
-  
+
 7. Engagement
 
 This alpha site will be a proof of concept. It won’t contain all the content and it won’t have everything needed to launch the website, but it will provide a basis for getting the things that matter most to your users right.

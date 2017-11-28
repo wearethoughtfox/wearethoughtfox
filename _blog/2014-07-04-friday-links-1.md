@@ -4,7 +4,7 @@ title: 'Filtered #1'
 date: 2014-07-04T11:14:27+00:00
 author: Rob
 excerpt: "Here's a selection of what's sparked our curiosity, piqued our interest and made us shudder (almost) with delight this week."
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=580
 permalink: /blog/friday-links-1/
 image: /site/wp-content/uploads/2014/07/friday-links-1-160x108.jpg
@@ -27,7 +27,7 @@ She also enjoyed this talk about the story of Airbnb and the growth of the shari
 <div class='videoWrapper'>
 </div>
 
-And finally from Una: a video of Tina RothEisenberg talking about side projects which turned into “labors of love”. 
+And finally from Una: a video of Tina RothEisenberg talking about side projects which turned into “labors of love”.
 
 <div class='videoWrapper'>
 </div>
@@ -46,18 +46,18 @@ I found much to chew over in [this great talk](http://idlewords.com/bt14.htm) by
 
 > One of the worst aspects of surveillance is how it limits our ability to be creative with technology. It&#8217;s like a tax we all have to pay on innovation. We can&#8217;t have cool things, because they&#8217;re too potentially invasive.
 
-I also enjoyed [this talk on generalists and trans-media by Frank Chimero](http://frankchimero.com/talks/designing-in-the-borderlands/transcript/) which gave me hope as a incurably curious generalist lurching from interest to interest and feeling inadequate in the face of specialists. 
+I also enjoyed [this talk on generalists and trans-media by Frank Chimero](http://frankchimero.com/talks/designing-in-the-borderlands/transcript/) which gave me hope as a incurably curious generalist lurching from interest to interest and feeling inadequate in the face of specialists.
 
-I still believe that: 
+I still believe that:
 
 > Major innovation comes from the unexplored no-man&#8217;s-land between the disciplines
 
-<cite>&#8211; Norbert Weiner</cite> 
+<cite>&#8211; Norbert Weiner</cite>
 
-and point anyone in doubt in the direction of [James Burke&#8217;s dConstruct talk from 2012](http://2012.dconstruct.org/conference/burke/). 
+and point anyone in doubt in the direction of [James Burke&#8217;s dConstruct talk from 2012](http://2012.dconstruct.org/conference/burke/).
 
-Finally, here&#8217;s a [great article about &#8220;Bots of conviction&#8221;](https://medium.com/@samplereality/a-protest-bot-is-a-bot-so-specific-you-cant-mistake-it-for-bullshit-90fe10b7fbaa) with some interesting guidance on creating Twitter bots which have meaning and are effective for protest. 
+Finally, here&#8217;s a [great article about &#8220;Bots of conviction&#8221;](https://medium.com/@samplereality/a-protest-bot-is-a-bot-so-specific-you-cant-mistake-it-for-bullshit-90fe10b7fbaa) with some interesting guidance on creating Twitter bots which have meaning and are effective for protest.
 
 &#8212;
-  
+
 End of transmission

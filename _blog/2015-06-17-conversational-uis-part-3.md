@@ -3,7 +3,7 @@ id: 704
 title: 'Conversational UIs and bots for news and information &#8211; Part 3'
 date: 2015-06-17T09:12:01+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=704
 permalink: /blog/conversational-uis-part-3/
 categories:
@@ -28,7 +28,7 @@ We started off with the weather. Rather than churning out a general weather fore
 
 ## What’s the news around here?
 
-The news also worked well on Twitter thanks to the cards display. 
+The news also worked well on Twitter thanks to the cards display.
 
 <img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-news.jpg" alt="What’s the latest news?" class="alignleft size-full wp-image-706" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-news.jpg 598w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-news-580x407.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-news-160x112.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-news-400x281.jpg 400w" sizes="(max-width: 598px) 100vw, 598px" />
 
@@ -36,7 +36,7 @@ The medium exposed problems in the content itself: it wasn’t specific enough o
 
 ## What’s the most popular news around here?
 
-We used the Chartbeat API to get the local article which is being shared the most on Facebook, Twitter, etc. It worked quite well, although the wording “hottest” story needs to be changed to accommodate all possible stories. 
+We used the Chartbeat API to get the local article which is being shared the most on Facebook, Twitter, etc. It worked quite well, although the wording “hottest” story needs to be changed to accommodate all possible stories.
 
 ![What’s the most popular story?](http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-popular.jpg)
 
@@ -48,7 +48,7 @@ The API at http://data.police.uk has lots of information about specific crimes a
 
 Each tweet gives you a sense of what crime incidents happen in the area as well as their outcome. We felt the randomness reflects &#8211; in limited ways &#8211; the nature of crime itself. I urge you to try it for yourself.
 
-The general statistics didn’t work quite so well. The idea was that by comparing statistics such the crime rate and total crimes to neighbouring areas you would get a sense of how safe a place was. The city centre’s small population gave it a crime rate of 84.43 and using the total crimes wasn’t easy to convey in a single tweet. There’s still lots to explore with this data. 
+The general statistics didn’t work quite so well. The idea was that by comparing statistics such the crime rate and total crimes to neighbouring areas you would get a sense of how safe a place was. The city centre’s small population gave it a crime rate of 84.43 and using the total crimes wasn’t easy to convey in a single tweet. There’s still lots to explore with this data.
 
 ![Is it safe?](http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-safe.jpg)
 
@@ -58,7 +58,7 @@ The general election was coming up as we were working on this sprint so we decid
 
 ![Who can I vote for?](http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-vote.jpg)
 
-It was also difficult to convey the distinction between this is who you should vote for and this is who you could vote for, since the tweet was not a recommendation. 
+It was also difficult to convey the distinction between this is who you should vote for and this is who you could vote for, since the tweet was not a recommendation.
 
 ## Information gathering
 
@@ -74,11 +74,11 @@ The final conversation used information about burger restaurants from an MEN art
 
 ![Service Discovery](http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.003-burger.jpg)
 
-You get details about the rating &#8211; poor, not bad, OK, good and great &#8211; as well as the cost of a burger and directions from the postbox. This service was the most popular by far as well as the easiest for people to understand, so we are going to work on improving it in the next sprint. 
+You get details about the rating &#8211; poor, not bad, OK, good and great &#8211; as well as the cost of a burger and directions from the postbox. This service was the most popular by far as well as the easiest for people to understand, so we are going to work on improving it in the next sprint.
 
 ## Conclusions
 
-It was a great sprint exploring a range of different directions with good reaction from users in general to the concept. Here’s some of the things we learnt: 
+It was a great sprint exploring a range of different directions with good reaction from users in general to the concept. Here’s some of the things we learnt:
 
   * The conversational UI feels useful and provides something different to other ways of interacting with MEN.
   * The conversational UI is flexible and transferable &#8211; SMS, Twitter, WhatsApp, etc may have different affordances &#8211; but creating content in a general conversational format means the engine could be used to run different outlets without too much extra effort.
@@ -94,12 +94,12 @@ We are also going to explore the commercial possibilities. What if a person had 
 
 There were also some technical issues around JSON parsing errors, repeated tweets and character counts which we hope to work on to improve the experience.
 
-It’s been great to work on this project which is not over yet. Thanks to the Manchester Evening News for the opportunity. If [“designing for messaging” does “become a discipline as important as responsive design”](https://medium.com/@benbrown/slack-is-the-operating-system-6bae1a6c0291), we hope to be at the forefront of these developments, blending writing and programming to create new experiences for 21st-century journalism. 
+It’s been great to work on this project which is not over yet. Thanks to the Manchester Evening News for the opportunity. If [“designing for messaging” does “become a discipline as important as responsive design”](https://medium.com/@benbrown/slack-is-the-operating-system-6bae1a6c0291), we hope to be at the forefront of these developments, blending writing and programming to create new experiences for 21st-century journalism.
 
 This post is part of a series about a project exploring conversational UIs for news and information to help Manchester Evening News become part of the fabric of the city.
 
 [Part 1](http://wearethoughtfox.com/blog/conversational-ui-part-1/)
-  
+
 [Part 2](http://wearethoughtfox.com/blog/conversational-ui-part-2/)
-  
+
 → Part 3

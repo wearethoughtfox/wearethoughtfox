@@ -3,7 +3,7 @@ id: 838
 title: Analysis phase is coming to an end
 date: 2013-09-26T09:04:00+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/blog/analysis-phase-is-coming-to-an-end/
 permalink: /blog/analysis-phase-is-coming-to-an-end/
 tumblr_new-icc_permalink:
@@ -18,8 +18,8 @@ tags:
 ---
 Over the last few weeks, we&rsquo;ve been examining who uses the ICC website, how they use it and what they need from a new ICC website. We&rsquo;ve used three main techniques:
 
-1. **Data from web analytics** &#8211; Helps to understand users, uncover usage patterns, see most popular content and use search logs to see what people are looking for.  
-2. **Web survey** &#8211; Over 400 people answered the website survey in the last few weeks.  
+1. **Data from web analytics** &#8211; Helps to understand users, uncover usage patterns, see most popular content and use search logs to see what people are looking for.
+2. **Web survey** &#8211; Over 400 people answered the website survey in the last few weeks.
 3. **Telephone interviews** &#8211; We have conducted interviews with users from the different audiences from around the world including the general public, journalists, NGOs, academics, lawyers and diplomats. 
 
 We&rsquo;ve also talked to **representatives of the ICC organs and other stakeholders** about what they need from the website. 

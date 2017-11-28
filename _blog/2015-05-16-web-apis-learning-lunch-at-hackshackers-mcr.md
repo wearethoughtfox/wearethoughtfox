@@ -4,7 +4,7 @@ title: 'Web APIs &#8211; Learning lunch at Hacks/Hackers MCR'
 date: 2015-05-16T11:06:13+00:00
 author: Rob
 excerpt: 'Details of the first HacksHackers Learning Lunch. The topic was Web APIs. '
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=664
 permalink: /blog/web-apis-learning-lunch-at-hackshackers-mcr/
 categories:

@@ -4,7 +4,7 @@ title: 'Update &#8211; Hyperlocal chat project'
 date: 2016-03-11T14:48:40+00:00
 author: Rob
 excerpt: 'The latest about our chatbot project for hyperlocal news and information. '
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=807
 permalink: /blog/update-hyperlocal-chat-project/
 medium_post:

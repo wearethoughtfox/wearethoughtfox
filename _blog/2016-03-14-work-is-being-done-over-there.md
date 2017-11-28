@@ -3,7 +3,7 @@ id: 817
 title: Work is being done over there
 date: 2016-03-14T12:18:18+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=817
 permalink: /blog/work-is-being-done-over-there/
 medium_post:

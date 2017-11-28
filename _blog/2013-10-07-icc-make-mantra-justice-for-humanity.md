@@ -3,7 +3,7 @@ id: 836
 title: 'ICC make mantra: justice for humanity'
 date: 2013-10-07T09:36:05+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/blog/icc-make-mantra-justice-for-humanity/
 permalink: /blog/icc-make-mantra-justice-for-humanity/
 tumblr_new-icc_permalink:

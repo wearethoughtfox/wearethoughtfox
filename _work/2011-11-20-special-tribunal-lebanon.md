@@ -4,15 +4,12 @@ title: Special Tribunal for Lebanon
 date: 2011-11-20T11:53:13+00:00
 author: Rob
 excerpt: New website for an international tribunal.
-layout: post
+layout: work
 guid: http://wearethoughtfox.com/?p=637
 permalink: /work/special-tribunal-lebanon/
-slideshow:
-  - "12"
 image: /site/wp-content/uploads/2014/11/stl-teaser-152x120.jpg
 categories:
   - Work
-format: aside
 type:
   - 'Concept &amp; strategy'
   - 'Data &amp; maps'

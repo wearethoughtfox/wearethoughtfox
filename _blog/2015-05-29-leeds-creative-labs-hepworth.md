@@ -4,7 +4,7 @@ title: 'Leeds Creative Labs &#8211; Hepworth Edition'
 date: 2015-05-29T11:05:07+00:00
 author: Rob
 excerpt: 'Updates on our work at Leeds Creative Labs - Hepworth Edition.'
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=661
 permalink: /blog/leeds-creative-labs-hepworth/
 image: /site/wp-content/uploads/2015/05/hepworth-leeds-160x99.jpg
@@ -18,7 +18,7 @@ tags:
 ---
 I wrote this post for the Leeds Creative Labs &#8211; Hepworth Edition [where it was published](http://leedscreativelabs.com/hepworth-session-4-joanne-louise-rob-steve/). I&#8217;m also posting it here for archiving.
 
-Here&#8217;s a picture of our excellent team: Steve Manthorp, Louise Atkinson, Joanne Armitage and myself. 
+Here&#8217;s a picture of our excellent team: Steve Manthorp, Louise Atkinson, Joanne Armitage and myself.
 
 ![hepworth-leeds](http://wearethoughtfox.com/site/wp-content/uploads/2015/05/hepworth-leeds.jpg)
 

@@ -4,15 +4,12 @@ title: Amnesty International
 date: 2013-07-28T14:32:31+00:00
 author: Rob
 excerpt: An interactive panorama telling the stories of the people living the Deep Sea Slum in Nairobi.
-layout: post
+layout: work
 guid: http://wearethoughtfox.com/site/?p=300
 permalink: /work/deep-sea-slum-amnesty-international/
-slideshow:
-  - "5"
 image: /site/wp-content/uploads/2013/07/deep-sea-amnesty-21-152x120.jpg
 categories:
   - Work
-format: aside
 type:
   - Digital development
 ---

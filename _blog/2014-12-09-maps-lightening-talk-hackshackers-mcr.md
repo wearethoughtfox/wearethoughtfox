@@ -3,7 +3,7 @@ id: 646
 title: 'Maps &#8211; Lightening talk at Hacks/Hackers MCR'
 date: 2014-12-09T10:25:00+00:00
 author: Rob
-layout: post
+layout: blog
 guid: http://wearethoughtfox.com/?p=646
 permalink: /blog/maps-lightening-talk-hackshackers-mcr/
 categories:
@@ -40,7 +40,7 @@ Geojson is a good format for the data. It is flexible and allows you to add your
           53.5716481<br />
         ]<br />
       }<br />
-` 
+`
 
 But it can be inefficient with large data sets and polygons (consider Topojson if project can work with modern browsers <IE8)
 
@@ -56,11 +56,11 @@ To export:
 ## Display
 
   1. Try using http://geojson.io
-  2. Cut and paste the geojson data exported above into the text window. 
+  2. Cut and paste the geojson data exported above into the text window.
   3. Your points will appear on the map
-  4. Table view is good to see and scan your data 
+  4. Table view is good to see and scan your data
   5. Use Github pages &#8211; free hosting and version control. Update the data using http://geojson.io
-  6. Lots of ways to customise how the map looks and behaves, eg [Tilemill](http://mapbox.com/tilemill/) (no programming skill required) or [Mapbox JavaScript API](https://www.mapbox.com/mapbox.js/api/v2.1.4/) (you need to know some JavaScript) 
+  6. Lots of ways to customise how the map looks and behaves, eg [Tilemill](http://mapbox.com/tilemill/) (no programming skill required) or [Mapbox JavaScript API](https://www.mapbox.com/mapbox.js/api/v2.1.4/) (you need to know some JavaScript)
 
 ## Tutorials
 
@@ -83,9 +83,9 @@ To export:
 Digital maps tend to follow certain formats, but these examples show different and interesting approaches:
 
   * [How Big
-  
+
     Really](http://berglondon.com/blog/2010/08/17/introducing-bbc-dimensions/)
-  * [Prettymaps](http://prettymaps.stamen.com/201008/about/) 
+  * [Prettymaps](http://prettymaps.stamen.com/201008/about/)
   * [Google Faces](http://www.onformative.com/lab/googlefaces/)
   * [Rorschmap](http://rorschmap.com/) [Geoguessr](https://geoguessr.com)
   * [Stonehenge in your city](http://sztanko.github.io/solsticestreets/)
