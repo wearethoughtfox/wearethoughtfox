@@ -1,0 +1,37 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+pagination:
+  enabled: true
+  collection: blog
+---
+
+{% include nav.html %}
+
+<h2>{{ page.title }}</h2>
+
+  {% for post in paginator.posts %}
+  <article class="w-100">
+    <a href="#0" class="ph2 ph0-ns pb3 link db">
+      <h3 class="f5 f4-ns mb0">{{ post.title }}</h3>
+    </a>
+
+    {{ post.content }}
+  </article>
+  {% endfor %}
+
+  {% if paginator.total_pages > 1 %}
+<ul>
+  {% if paginator.previous_page %}
+  <li>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' |  replace: 'index.html', '' }}">Newer</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' |  replace: 'index.html', '' }}">Older</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}

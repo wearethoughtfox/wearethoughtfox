@@ -24,6 +24,14 @@ collections:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  collection: 'blog'
+  per_page: 3
+  permalink: '/page/:num/'
+  sort_reverse : true
 
 include:
   - _pages
