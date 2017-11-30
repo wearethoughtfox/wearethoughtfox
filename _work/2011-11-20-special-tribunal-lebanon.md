@@ -9,7 +9,7 @@ guid: http://wearethoughtfox.com/?p=637
 permalink: /work/special-tribunal-lebanon/
 image: /site/wp-content/uploads/2014/11/stl-teaser-152x120.jpg
 categories:
-  - Work
+  - work
 type:
   - 'Concept &amp; strategy'
   - 'Data &amp; maps'

@@ -4,13 +4,11 @@ title: BBC Connected Studio Pilot
 date: 2013-07-11T14:44:47+00:00
 author: Rob
 excerpt: Prototyping a new way of creating digital companions from existing CBeebies characters.
-layout: blog
+layout: work
 guid: http://wearethoughtfox.com/site/?p=306
 permalink: /work/bbc-connected-studio-pilot/
 slideshow:
   - "7"
-medium_post:
-  - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:74:"https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png";s:10:"author_url";s:35:"https://medium.com/@wearethoughtfox";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:3:"yes";s:2:"id";s:12:"b2dd4538125a";s:21:"follower_notification";s:3:"yes";s:7:"license";s:14:"cc-40-by-nc-nd";s:14:"publication_id";s:2:"-1";s:6:"status";s:5:"draft";s:3:"url";s:48:"https://medium.com/@wearethoughtfox/b2dd4538125a";}'
 image: /site/wp-content/uploads/2013/07/bbc-connected-2-152x120.jpg
 categories:
   - Work

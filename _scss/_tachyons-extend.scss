@@ -1,6 +1,6 @@
 //font-family
 body {
-  @extend .sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1,.h1,
@@ -9,7 +9,7 @@ h3,
 .h3,
 h4,
 .h4 {
-   @extend .sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 p {
@@ -69,7 +69,7 @@ h4,.f4 { font-size: 1rem; }
 .secondary { color: $secondary-color; }
 .customgrey { color: $grey-color; }
 
-.bg-ashblue { background-color: $primary-color }
+.bg-primary { background-color: $primary-color }
 .bg-secondary { background-color: $secondary-color; }
 .bg-customgrey { background-color: $grey-color; }
 
@@ -117,7 +117,7 @@ h3 {
   column-gap: 2em;
 }
 
-.bio-content p {
+.work-content p {
   @extend .pb3;
 }
 
@@ -126,3 +126,8 @@ p a {
   @extend .dim;
 }
 
+ul.dash > li:before {
+    content: '\2014'; /* en dash here */
+    position: absolute;
+    margin-left: -1.1em;
+}

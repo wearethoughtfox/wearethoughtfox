@@ -11,7 +11,7 @@ slideshow:
   - "1"
 image: /site/wp-content/uploads/2013/07/anesty-3b-154x120.jpg
 categories:
-  - Work
+  - work
 format: aside
 type:
   - 'Data &amp; maps'

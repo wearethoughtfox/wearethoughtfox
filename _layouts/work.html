@@ -1,9 +1,69 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+{% include nav.html %}
+
+<article class="ph2 pt4 cf">
+  <header class="fl-l w-25-l ph3-l">
+    <h2 class="mt0">{{ page.title }}</h2>
+  </header>
+
+  <div class="fl-l w-25-l ph3-l">
+    {{ page.date | date: "%Y" }}
+   <ul class="dash list light-silver pl3">
+      {% for type in page.type %}
+        <li class="">{{ type }}</li>
+      {% endfor %}
+    </ul>
+   </div>
+
+  <div class="fl-l w-50-l work-content pr3-l">
+    {{ content }}
+   </div>
+
+</article>
+
+  <aside class="cf mw5 mw8-ns pa3 ph5-ns bt b--black-10 center">
+  {% capture the_collection %}{{page.collection}}{% endcapture %}
+    {% if page.collection %}
+      {% assign  document = site[the_collection]  %}
+    {% endif %}
+
+  {% for links in document  %}
+    {% if links.title == page.title %}
+      {% unless forloop.first %}
+        {% assign prevurl = prev.url %}
+        {% assign prevtitle = prev.title %}
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next = document[forloop.index] %}
+        {% assign nexturl = next.url %}
+        {% assign nexttitle = next.title %}
+      {% endunless %}
+    {% endif %}
+    {% assign prev = links %}
+  {% endfor %}
+
+  <script>
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
+    if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+  };
+  </script>
+
+  {% if prevurl %}
+  <div class="fl w-50 tc">
+    <h3 class="f4 f3-l light-silver">Previous project</h3>
+    <a href="{{ prevurl }}" class="secondary dim">{{ prevtitle }}</a>
+
+  </div>
+  {% endif %}
+
+  {% if nexturl %}
+    <div class="fl w-50 tc">
+      <h3 class="f4 f3-l light-silver">Next project</h3>
+      <a href="{{ nexturl }}" class="secondary dim">{{ nexttitle }}</a>
+    </div>
+  {% endif %}
+  </aside>
