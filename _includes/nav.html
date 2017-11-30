@@ -3,8 +3,13 @@
     <img src="{{ site.baseurl }}/images/logo-abbr.png" class="dib w3 h3 br-100" alt="Site Name">
   </a>
   <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="How it Works">Work</a>
-    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="#" title="Blog">Blog</a>
-    <a class="link dim dark-gray f6 f5-l dib" href="#" title="Contact">Info</a>
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="/">Home</a>
+    {% for link in site.navigation %}
+     {% assign current = nil %}
+      {% if page.url contains link.url %}
+          {% assign current = 'current' %}
+      {% endif %}
+      <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
   </div>
 </nav>

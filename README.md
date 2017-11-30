@@ -13,6 +13,9 @@ https://github.com/alicelieutier/smoothScroll
 ## Scroll to top button
 https://www.shareicon.net/arrow-up-app-ui-essential-884106
 
+## Pagination
+https://github.com/sverrirs/jekyll-paginate-v2
+
 ## Process
 1. npm install for gulp dependancies
 2. Customise _config.yml

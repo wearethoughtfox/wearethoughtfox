@@ -29,7 +29,7 @@ plugins:
 pagination:
   enabled: true
   collection: 'blog'
-  per_page: 3
+  per_page: 5
   permalink: '/page/:num/'
   sort_reverse : true
 
@@ -46,3 +46,11 @@ defaults:
       path: '_pages'
     values:
       permalink: /:basename/
+
+navigation:
+ - title: Work
+   url: /work
+ - title: Blog
+   url: /blog
+ - title: Info
+   url: /info
