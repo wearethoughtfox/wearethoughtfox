@@ -25,9 +25,16 @@ collections:
 plugins:
   - jekyll-seo-tag
 
+include:
+  - _pages
+
 # Defaults
 defaults:
   - scope:
       path: ""
     values:
       image: /images/LOGO-RGB.png
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename/
