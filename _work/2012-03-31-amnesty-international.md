@@ -1,18 +1,14 @@
 ---
-id: 129
 title: 'Maps — Amnesty'
 date: 2012-03-31T13:17:07+00:00
-author: Rob
 excerpt: Custom maps for death penalty figures and other projects.
 layout: work
-guid: http://wearethoughtfox.com/?p=129
-permalink: /work/amnesty-international/
+permalink: /amnesty-international/
 slideshow:
   - "1"
 image: /images/work-amnesty-1-square.jpg
 categories:
   - work
-format: aside
 type:
   - 'Data &amp; maps'
   - Digital development

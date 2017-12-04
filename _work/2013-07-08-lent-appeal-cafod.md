@@ -1,18 +1,14 @@
 ---
-id: 303
-title: 'Lent Appeal &#8211; Cafod'
+title: 'Lent Appeal — Cafod'
 date: 2013-07-08T14:34:06+00:00
-author: Rob
 excerpt: An interactive story to show the importance a goat to a community.
 layout: work
-guid: http://wearethoughtfox.com/site/?p=303
-permalink: /work/lent-appeal-cafod/
+permalink: /lent-appeal-cafod/
 slideshow:
   - "6"
 image: /images/work-cafod-square.jpg
 categories:
   - Work
-format: aside
 type:
   - Digital development
 ---

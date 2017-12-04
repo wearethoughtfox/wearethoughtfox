@@ -127,7 +127,21 @@ p a {
 }
 
 ul.dash > li:before {
-    content: '\2014'; /* en dash here */
-    position: absolute;
-    margin-left: -1.1em;
+  content: '\2014'; /* en dash here */
+  position: absolute;
+  margin-left: -1.1em;
+}
+
+.current {
+  text-decoration: none;
+  position: relative;
+}
+
+.current:after  {
+  content: "";
+  border-bottom: 6px solid $primary-color;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
 }

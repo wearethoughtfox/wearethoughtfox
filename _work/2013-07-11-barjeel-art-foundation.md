@@ -1,12 +1,9 @@
 ---
-id: 287
 title: Website — Barjeel
 date: 2013-07-11T14:27:26+00:00
-author: Rob
 excerpt: A ground-up rebranding and website design and build.
 layout: work
-guid: http://wearethoughtfox.com/site/?p=287
-permalink: /work/barjeel-art-foundation/
+permalink: /barjeel-art-foundation/
 slideshow:
   - "3"
 image: /images/work-barjeel-square.jpg

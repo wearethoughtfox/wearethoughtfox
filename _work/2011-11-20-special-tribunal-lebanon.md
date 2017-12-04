@@ -1,11 +1,9 @@
 ---
-id: 637
 title: Special Tribunal for Lebanon
 date: 2011-11-20T11:53:13+00:00
-author: Rob
 excerpt: New website for an international tribunal.
 layout: work
-permalink: /work/special-tribunal-lebanon/
+permalink: /special-tribunal-lebanon/
 image: /images/work-stl-square.jpg
 categories:
   - work
