@@ -5,9 +5,8 @@ date: 2011-11-20T11:53:13+00:00
 author: Rob
 excerpt: New website for an international tribunal.
 layout: work
-guid: http://wearethoughtfox.com/?p=637
 permalink: /work/special-tribunal-lebanon/
-image: /site/wp-content/uploads/2014/11/stl-teaser-152x120.jpg
+image: /images/work-stl-square.jpg
 categories:
   - work
 type:

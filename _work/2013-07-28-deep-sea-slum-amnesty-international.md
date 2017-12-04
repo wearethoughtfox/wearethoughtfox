@@ -1,13 +1,12 @@
 ---
 id: 300
-title: Amnesty International
+title: 360 Panorama — Amnesty
 date: 2013-07-28T14:32:31+00:00
 author: Rob
 excerpt: An interactive panorama telling the stories of the people living the Deep Sea Slum in Nairobi.
 layout: work
-guid: http://wearethoughtfox.com/site/?p=300
 permalink: /work/deep-sea-slum-amnesty-international/
-image: /site/wp-content/uploads/2013/07/deep-sea-amnesty-21-152x120.jpg
+image: /images/work-amnesty-2-square.jpg
 categories:
   - Work
 type:

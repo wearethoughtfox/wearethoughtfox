@@ -9,7 +9,7 @@
       {% if page.url contains link.url %}
           {% assign current = 'current' %}
       {% endif %}
-      <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}" href="{{ link.url }}">{{ link.title }}</a>
+      <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l {{ current }}" href="{{ link.url }}">{{ link.title }}</a>
     {% endfor %}
   </div>
 </nav>

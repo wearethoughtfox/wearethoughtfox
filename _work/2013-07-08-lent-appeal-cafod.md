@@ -9,7 +9,7 @@ guid: http://wearethoughtfox.com/site/?p=303
 permalink: /work/lent-appeal-cafod/
 slideshow:
   - "6"
-image: /site/wp-content/uploads/2013/07/cafod-1-152x120.jpg
+image: /images/work-cafod-square.jpg
 categories:
   - Work
 format: aside
