@@ -3,7 +3,7 @@ title: 'Maps — Amnesty'
 date: 2012-03-31T13:17:07+00:00
 excerpt: Custom maps for death penalty figures and other projects.
 layout: work
-permalink: /amnesty-international/
+slug: amnesty-international
 slideshow:
   - "1"
 image: /images/work-amnesty-1-square.jpg

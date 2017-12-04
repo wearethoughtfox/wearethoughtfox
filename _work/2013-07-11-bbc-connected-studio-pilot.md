@@ -3,7 +3,7 @@ title: BBC Connected Studio
 date: 2013-07-11T14:44:47+00:00
 excerpt: Prototyping a new way of creating digital companions from existing CBeebies characters.
 layout: work
-permalink: /bbc-connected-studio-pilot/
+slug: /bbc-connected-studio-pilot/
 slideshow:
   - "7"
 image: /images/work-bbc-square.jpg

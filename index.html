@@ -6,7 +6,7 @@ layout: default
 
 <header class="bg-customgrey">
   <div class="center ph3 ph4-ns ph5-l pv5">
-    <h2 class="f4 f2-l secondary"><span class="primary">We Are Thought Fox</span> is a tiny design and development studio</h2>
+    <h2 class="f4 f2-l secondary"><span class="primary">We Are Thought Fox</span> is a tiny studio</h2>
     <h1 class="f1 f-headline-l mt0 secondary">Making the web
     </h1>
   </div>
@@ -18,37 +18,20 @@ layout: default
   </div>
 </section>
 
-<section class="cf center ph3 ph4-ns">
-  <article class="fl w-100 w-33-ns pa3-ns">
-    <div class="aspect-ratio aspect-ratio--1x1">
-      <img style="background-image:url(http://mrmrs.github.io/images/0006.jpg);"
-      class="db bg-center cover aspect-ratio--object" />
-    </div>
-    <a href="#0" class="ph2 ph0-ns pb3 link db">
-      <h3 class="f5 f4-ns mb0 black-90">Title of piece</h3>
-      <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece</h3>
-    </a>
-  </article>
-
-  <article class="fl w-100 w-33-ns pa3-ns">
-    <div class="aspect-ratio aspect-ratio--1x1">
-      <img style="background-image:url(http://mrmrs.github.io/images/0006.jpg);"
-      class="db bg-center cover aspect-ratio--object" />
-    </div>
-    <a href="#0" class="ph2 ph0-ns pb3 link db">
-      <h3 class="f5 f4-ns mb0 black-90">Title of piece</h3>
-      <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece</h3>
-    </a>
-  </article>
-
-  <article class="fl w-100 w-33-ns pa3-ns">
-    <div class="aspect-ratio aspect-ratio--1x1">
-      <img style="background-image:url(http://mrmrs.github.io/images/0006.jpg);"
-      class="db bg-center cover aspect-ratio--object" />
-    </div>
-    <a href="#0" class="ph2 ph0-ns pb3 link db">
-      <h3 class="f5 f4-ns mb0 black-90">Title of piece</h3>
-      <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece</h3>
-    </a>
-  </article>
+<section class="cf center ph3 ph4-ns pb5-l">
+  {% assign publishedPosts = site.work | where: 'featured', 'true' %}
+    {% for work in publishedPosts reversed limit:10 %}
+      <article class="fl w-100 w-50-m w-33-l pa3-ns">
+        <a href="{{ work.url }}">
+        <div class="aspect-ratio aspect-ratio--1x1">
+          <img style="background-image:url({{ work.image }});"
+          class="db bg-center cover aspect-ratio--object dim" />
+        </div>
+        </a>
+        <a href="{{ work.url }}" class="ph2 ph0-ns pb2 link db dim">
+          <h3 class="f5 f4-ns mb0">{{ work.title }}</h3>
+        </a>
+        <p class="light-silver pb3">{{work.excerpt}}</p>
+      </article>
+  {% endfor %}
 </section>

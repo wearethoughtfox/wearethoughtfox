@@ -3,7 +3,7 @@ title: 'Lent Appeal — Cafod'
 date: 2013-07-08T14:34:06+00:00
 excerpt: An interactive story to show the importance a goat to a community.
 layout: work
-permalink: /lent-appeal-cafod/
+slug: lent-appeal-cafod
 slideshow:
   - "6"
 image: /images/work-cafod-square.jpg

@@ -3,7 +3,7 @@ title: 360 Panorama — Amnesty
 date: 2013-07-28T14:32:31+00:00
 excerpt: An interactive panorama telling the stories of the people living the Deep Sea Slum in Nairobi.
 layout: work
-permalink: /deep-sea-slum-amnesty-international/
+slug: deep-sea-slum-amnesty-international
 image: /images/work-amnesty-2-square.jpg
 categories:
   - Work

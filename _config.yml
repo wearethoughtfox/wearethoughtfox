@@ -17,7 +17,7 @@ footer:              "We Are Thought Fox Ltd, Registered in England and Wales, n
 collections:
   work:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:slug
   blog:
     output: true
     permalink: /:collection/:name

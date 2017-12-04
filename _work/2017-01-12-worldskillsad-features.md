@@ -5,6 +5,7 @@ date: 2017-01-12 09:35:48
 layout: work
 slug: worldskillsad-features
 title: WorldSkills Abu Dhabi features
+featured: true
 categories:
 - Work
 image: /images/work-wsad-feature-grey-square.jpg
