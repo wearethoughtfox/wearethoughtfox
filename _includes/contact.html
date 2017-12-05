@@ -1,6 +1,6 @@
 <section class="bg-primary">
   <div class="center ph3 ph4-ns pv4 pv5-l">
-  <h2 class="f3 f1-l secondary fw4 customgrey">Get in touch to discuss a project. Here's <a href="/info" class="customgrey dim">how we can help.</a></h2>
+  <h2 class="f3 f1-l secondary fw4 customgrey">Get in touch to discuss a project. {% if page.permalink != '/info/' %} Here's <a href="/info" class="customgrey dim">how we can help.</a></h2>{% endif %}
   <div id="contact" class="mw6 mw7-ns pt4">
     <span itemscope itemtype="http://schema.org/Corporation">
       <span class="dn" itemprop="name">{{ site.name }}</span>
