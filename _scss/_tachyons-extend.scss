@@ -146,11 +146,11 @@ ul.dash > li:before {
 .current:after  {
   content: "";
   border-style: solid;
-  border-bottom-width: 6px;
+  border-bottom-width: $spacing-extra-small;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4px;
+  bottom: -$spacing-small;
 }
 
 .thickline {
@@ -161,11 +161,11 @@ ul.dash > li:before {
 .thickline:hover:after  {
   content: "";
   border-style: solid;
-  border-bottom-width: 6px;
+  border-bottom-width: $spacing-extra-small;
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4px;
+  bottom: -$spacing-small;
 }
 
 

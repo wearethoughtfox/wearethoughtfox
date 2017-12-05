@@ -5,7 +5,7 @@ layout: default
 {% include nav.html %}
 
 <header class="bg-customgrey">
-  <div class="center ph3 ph4-ns ph5-l pv5">
+  <div class="center ph3 ph4-ns ph4-l pv5">
     <h2 class="f4 f2-l secondary"><span class="primary">We Are Thought Fox</span> is a tiny studio</h2>
     <h1 class="f1 f-headline-l mt0 secondary">Making the web
     </h1>
@@ -13,8 +13,8 @@ layout: default
 </header>
 
 <section>
-  <div class="center ph3 ph4-ns ph5-l pv4 pv5-l">
-    <h2 class="f3 f1-l secondary fw4">We <span class="primary">bring ideas to life</span> on the web through research, design, making and storytelling.</h2>
+  <div class="center ph3 ph4-ns ph4-l pv4 pv5-l">
+    <h2 class="f3 f1-l secondary fw4">We <span class="primary">bring ideas to life</span> on the web through research, design, making and storytelling. Take a look.</h2>
   </div>
 </section>
 
@@ -36,14 +36,4 @@ layout: default
   {% endfor %}
 </section>
 
-<section class="bg-primary">
-  <div class="center ph3 ph4-ns ph5-l pv4 pv5-l">
-  <h2 class="f3 f1-l secondary fw4 customgrey">Get in touch to discuss a project. Here's <a href="/info" class="customgrey dim current">some ideas about how we can help.</a></h2>
-  <div id="contact" class="mw6 mw7-ns pt4">
-    <span itemscope itemtype="http://schema.org/Corporation">
-      <span class="dn" itemprop="name">{{ site.name }}</span>
-        <a class="dim f5 f3-ns link ph3 ph4-l pv2 mb4 mr3-ns dib white bg-secondary ttu tracked" href="mailto:{{ site.email }}">Email us</a>
-        <meta itemprop="email" content="{{ site.email }}">
-  </div>
-</div>
-</section>
+{% include contact.html %}
