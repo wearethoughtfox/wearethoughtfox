@@ -5,8 +5,8 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Setup
 title:               We Are Thought Fox
-description:         'We are strategic communications firm that provides counsel to governments, companies and successful individuals.'
-tagline:             Strategic communication
+description:         "We're a tiny studio 👽 with an anti-disciplinary approach 🦄 trying to make the web great again 💞"
+tagline:             Making the web
 url:                 https://www.wearethoughtfox.com
 logo:                /images/LOGO-RGB.png
 tel:                 +971552810637
