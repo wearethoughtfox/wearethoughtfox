@@ -3,7 +3,8 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
-var cssnano = require('gulp-cssnano');
+var cssnano     = require('gulp-cssnano');
+var critical    = require('critical');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -56,6 +57,25 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+
+
+gulp.task('critical', function () {
+  critical.generate({
+    base: './',
+    src: '_site/index.html',
+    css: '_site/css/main.css',
+    dest: '_includes/critical.css',
+    dimensions: [{
+        height: 200,
+        width: 500
+    }, {
+        height: 900,
+        width: 1200
+    }],
+    minify: true
+  });
+});
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -69,4 +89,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['critical','browser-sync', 'watch']);
