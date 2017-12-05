@@ -21,14 +21,14 @@ layout: default
 <section class="cf center ph3 ph4-ns pb5-l">
   {% assign publishedPosts = site.work | where: 'featured', 'true' %}
     {% for work in publishedPosts reversed limit:10 %}
-      <article class="fl w-100 w-50-m w-33-l pa3-ns">
+      <article class="fl w-100 w-33-l pa3-ns">
         <a href="{{ work.url }}">
         <div class="aspect-ratio aspect-ratio--1x1">
           <img style="background-image:url({{ work.image }});"
           class="db bg-center cover aspect-ratio--object dim" />
         </div>
         </a>
-        <a href="{{ work.url }}" class="ph2 ph0-ns pb2 link db dim">
+        <a href="{{ work.url }}" class="pb2 link db dim">
           <h3 class="f5 f4-ns mb0">{{ work.title }}</h3>
         </a>
         <p class="light-silver pb3">{{work.excerpt}}</p>

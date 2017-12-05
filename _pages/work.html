@@ -5,16 +5,16 @@ title: Work
 
 {% include nav.html %}
 
-  <section class="pb5 cf">
+  <section class="cf center ph3 ph4-ns pb5-l pt3">
     {% for work in site.work reversed %}
-    <article class="fl w-100 w-50-m w-33-l pa3-ns">
-      <a href="{{ work.permalink }}">
+    <article class="fl w-100 w-33-l pa3-ns pb3 pb0-l">
+      <a href="{{ work.url }}">
       <div class="aspect-ratio aspect-ratio--1x1">
         <img style="background-image:url({{ work.image }});"
         class="db bg-center cover aspect-ratio--object dim" />
       </div>
       </a>
-      <a href="{{ work.permalink }}" class="ph2 ph0-ns link db dim">
+      <a href="{{ work.url }}" class="link db dim">
         <h3 class="f5 f4-ns mb0">{{ work.title }}</h3>
       </a>
       <p class="f6 f5 fw4 mt2 light-silver pb3">{{ work.date | date: "%Y"  }}</p>

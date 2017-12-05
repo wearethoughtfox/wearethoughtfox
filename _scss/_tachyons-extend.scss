@@ -153,19 +153,3 @@ ul.dash > li:before {
   bottom: -$spacing-small;
 }
 
-.thickline {
-  text-decoration: none;
-  position: relative;
-}
-
-.thickline:hover:after  {
-  content: "";
-  border-style: solid;
-  border-bottom-width: $spacing-extra-small;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -$spacing-small;
-}
-
-

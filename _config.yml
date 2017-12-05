@@ -20,7 +20,7 @@ collections:
     permalink: /:collection/:slug
   blog:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:slug
 
 plugins:
   - jekyll-seo-tag
