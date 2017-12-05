@@ -45,13 +45,14 @@ To install on Netlify, follow these instructions:
 6. Text animation
 
 ## Work - To add
-- MEN
-- WorldSkills AD
-- WorldSkills AD features
 - WorldSkills map
-- ICC Beta
 - Barjeel app
 - MSN
 - REC
-- Amnesty DP maps
 - Amnesty BRAVE
+
+## Work - Types
+- Concept &amp; strategy
+- Data &amp; maps
+- Digital development
+- Art direction &amp; design

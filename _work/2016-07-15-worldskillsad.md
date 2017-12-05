@@ -1,6 +1,4 @@
 ---
-author: roberto
-comments: false
 date: 2016-07-15 09:35:48
 layout: work
 slug: worldskillsad
@@ -8,14 +6,11 @@ title: WorldSkills Abu Dhabi 2017
 categories:
 - Work
 image: /images/work-wsad-square.jpg
-tags:
-- UX
-- Web development
-services:
-- Concept and strategy
-- Experience design
-- Digital development
-- Writing and editing
+type:
+  - Concept &amp; strategy
+  - Art direction &amp; design
+  - Data &amp; maps
+  - Digital development
 excerpt: Concept, design and development of a responsive website
 ---
 
