@@ -4,7 +4,7 @@ comments: false
 date: 2017-01-12 09:35:48
 layout: work
 slug: worldskillsad-features
-title: WorldSkills Abu Dhabi features
+title: Skills Unite Us
 featured: true
 categories:
 - Work
