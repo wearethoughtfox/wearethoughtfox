@@ -1,6 +1,8 @@
 # wearethoughtfox
 New company website using Jekyll, Tachyons and Netlify
 
+Temporary url: https://vigilant-brahmagupta-3ca639.netlify.com
+
 ## SEO tags
 Provided by https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 
