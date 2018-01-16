@@ -8,7 +8,8 @@ layout: default
   <div class="center ph3 ph4-ns ph4-l pv5">
     <h2 class="f4 f3-l secondary"><span class="primary">We Are Thought Fox</span> is a digital studio</h2>
     <h1 class="f1 f-headline-l mt0 secondary">Making the web
-      <span class="primary db animate-text pb4 pb6-l">
+      <span class="animate-text">
+      <span class="primary db  pb4 pb6-l">
         <span class="letters letters-1">delightful</span>
         <span class="letters letters-2">readable</span>
         <span class="letters letters-3">fast</span>
@@ -17,6 +18,11 @@ layout: default
         <span class="letters letters-6">trustworthy</span>
       </span>
     </h1>
+  </span>
+
+    <button class="play pt6">Play</button>
+    <button class="pause">Pause</button>
+
   </div>
 </header>
 
@@ -46,7 +52,12 @@ ml4.durationIn = 800;
 ml4.durationOut = 600;
 ml4.delay = 500;
 
-anime.timeline({loop: true})
+var textTimeline = anime.timeline({
+  loop: true,
+  autoplay: true
+});
+
+textTimeline
   .add({
     targets: '.animate-text .letters-1',
     opacity: ml4.opacityIn,
@@ -125,6 +136,18 @@ anime.timeline({loop: true})
     duration: 500,
     delay: 500
   });
+
+var playButton = document.querySelector('.play');
+var pauseButton = document.querySelector('.pause');
+playButton.addEventListener('click', function() {
+  textTimeline.restart();
+  console.log ("play clicked");
+});
+pauseButton.addEventListener('click', function() {
+  textTimeline.pause();
+  console.log ("pause clicked");
+});
+
 
 </script>
 
