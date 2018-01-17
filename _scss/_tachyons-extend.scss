@@ -175,3 +175,15 @@ ul.dash > li:before {
   bottom: -$spacing-small;
 }
 
+.animate-text {
+  position: relative;
+}
+
+.animate-text .letters {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  left: 0;
+  opacity: 0;
+}
+

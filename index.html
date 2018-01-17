@@ -4,43 +4,127 @@ layout: default
 
 {% include nav.html %}
 
+<style>
+
+.animate-text .letters {
+  visibility: hidden;
+}
+
+</style>
+
 <header class="bg-customgrey">
   <div class="center ph3 ph4-ns ph4-l pv5">
     <h2 class="f4 f3-l secondary"><span class="primary">We Are Thought Fox</span> is a digital studio</h2>
     <h1 class="f1 f-headline-l mt0 secondary">Making the web
       <span class="animate-text">
-      <span class="primary db  pb4 pb6-l">
-        <span class="letters letters-1">delightful</span>
-        <span class="letters letters-2">readable</span>
-        <span class="letters letters-3">fast</span>
-        <span class="letters letters-4">open</span>
-        <span class="letters letters-5">make sense</span>
-        <span class="letters letters-6">trustworthy</span>
-      </span>
+        <span class="primary db  pb4 pb6-l">
+          <span class="letters letters-1">delightful</span>
+          <span class="letters letters-2">readable</span>
+          <span class="letters letters-3">fast</span>
+          <span class="letters letters-4">open</span>
+          <span class="letters letters-5">make sense</span>
+          <span class="letters letters-6">trustworthy</span>
+        </span>
+       </span>
     </h1>
-  </span>
 
-    <button class="play pt6">Play</button>
+    <button class="play mt6">Play</button>
     <button class="pause">Pause</button>
 
   </div>
 </header>
 
+<section>
+  <div class="center ph3 ph4-ns ph4-l pv4 pv5-l">
+    <h2 class="f4 f2-l secondary fw4 measure">We <span class="primary">bring ideas to life</span> on the web through research, design, making and storytelling. Take a look.</h2>
+  </div>
+</section>
+
+<section class="cf center ph3 ph4-ns pb5">
+  {% assign publishedPosts = site.work | where: 'featured', 'true' %}
+    {% for work in publishedPosts reversed limit:10 %}
+      <article class="fl w-100 w-33-l pa3-ns">
+        <a href="{{ work.url }}">
+        <div class="aspect-ratio aspect-ratio--1x1">
+          <img style="background-image:url({{ work.image }});"
+          class="db bg-center cover aspect-ratio--object dim" />
+        </div>
+        </a>
+        <a href="{{ work.url }}" class="pb2 link db dim">
+          <h3 class="f5 mb0">{{ work.title }}</h3>
+        </a>
+        <p class="light-silver pb3">{{work.excerpt}}</p>
+      </article>
+  {% endfor %}
+</section>
+
+<section id="sectors" class="pt4 pt0-l pb4 pt0-l bt b--black-10">
+  <div class="cf mw9 ph3 ph4-l pb5-l center">
+  <div class="fr w-100 w-80-l">
+    <h2 class="mt4 mb3 mb5-ns f1 f-subheadline-l secondary">We’ve worked with
+    </h2>
+  </div>
+  <div class="f4 lh-copy fl w-100 mb4-ns">
+    <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+        International Criminal Court
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+        United Nations
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+        Amnesty International
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+        BBC
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+        Trinity Mirror
+      </p>
+    </div>
+  </div>
+
+  <div class="f4 lh-copy fl w-100 mb4">
+    <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+        The National
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+        WorldSkills
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+      Cafod
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+      Barjeel
+      </p>
+    </div>
+    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
+      <p class="light-silver">
+      News International
+      </p>
+    </div>
+  </div>
+  </div>
+</section>
+
+{% include contact.html %}
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-<style type="text/css">
-.animate-text {
-  position: relative;
-}
-.animate-text .letters {
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  left: 0;
-  opacity: 0;
-}
-
-</style>
 
 <script>
 
@@ -133,110 +217,56 @@ textTimeline
   }).add({
     targets: '.animate-text',
     opacity: 0,
-    duration: 500,
-    delay: 500
+    duration: 500
   });
 
 var playButton = document.querySelector('.play');
 var pauseButton = document.querySelector('.pause');
+
 playButton.addEventListener('click', function() {
   textTimeline.restart();
-  console.log ("play clicked");
-});
-pauseButton.addEventListener('click', function() {
-  textTimeline.pause();
-  console.log ("pause clicked");
 });
 
+pauseButton.addEventListener('click', function() {
+  textTimeline.pause();
+});
+
+
+function getElementsByClassName(node,classname) {
+  if (node.getElementsByClassName) { // use native implementation if available
+    return node.getElementsByClassName(classname);
+  } else {
+    return (function getElementsByClass(searchClass,node) {
+        if ( node === null )
+          node = document;
+        var classElements = [],
+            els = node.getElementsByTagName("*"),
+            elsLen = els.length,
+            pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)"), i, j;
+
+        for (i = 0, j = 0; i < elsLen; i++) {
+          if ( pattern.test(els[i].className) ) {
+              classElements[j] = els[i];
+              j++;
+          }
+        }
+        return classElements;
+    })(classname, node);
+  }
+}
+
+function toggle_visibility(className) {
+  var elements = getElementsByClassName(document, className),
+       n = elements.length;
+   for (var i = 0; i < n; i++) {
+     var e = elements[i];
+     e.style.visibility = "visible";
+   }
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  toggle_visibility('letters');
+});
 
 </script>
 
-<section>
-  <div class="center ph3 ph4-ns ph4-l pv4 pv5-l">
-    <h2 class="f4 f2-l secondary fw4 measure">We <span class="primary">bring ideas to life</span> on the web through research, design, making and storytelling. Take a look.</h2>
-  </div>
-</section>
-
-<section class="cf center ph3 ph4-ns pb5">
-  {% assign publishedPosts = site.work | where: 'featured', 'true' %}
-    {% for work in publishedPosts reversed limit:10 %}
-      <article class="fl w-100 w-33-l pa3-ns">
-        <a href="{{ work.url }}">
-        <div class="aspect-ratio aspect-ratio--1x1">
-          <img style="background-image:url({{ work.image }});"
-          class="db bg-center cover aspect-ratio--object dim" />
-        </div>
-        </a>
-        <a href="{{ work.url }}" class="pb2 link db dim">
-          <h3 class="f5 mb0">{{ work.title }}</h3>
-        </a>
-        <p class="light-silver pb3">{{work.excerpt}}</p>
-      </article>
-  {% endfor %}
-</section>
-
-<section id="sectors" class="pt4 pt0-l pb4 pt0-l bt b--black-10">
-  <div class="cf mw9 ph3 ph4-l pb5-l center">
-  <div class="fr w-100 w-80-l">
-    <h2 class="mt4 mb3 mb5-ns f1 f-subheadline-l secondary">We’ve worked with
-    </h2>
-  </div>
-  <div class="f4 lh-copy fl w-100 mb4-ns">
-    <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-        International Criminal Court
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-        United Nations
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-        Amnesty International
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-        BBC
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-        Trinity Mirror
-      </p>
-    </div>
-  </div>
-
-  <div class="f4 lh-copy fl w-100 mb4">
-    <div class="fl-ns w-100 w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-        The National
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-        WorldSkills
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-      Cafod
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-      Barjeel
-      </p>
-    </div>
-    <div class="fl-ns w-50-m w-20-l pr3-m pr5-l">
-      <p class="light-silver">
-      News International
-      </p>
-    </div>
-  </div>
-  </div>
-</section>
-
-{% include contact.html %}
