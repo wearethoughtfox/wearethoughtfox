@@ -5,7 +5,7 @@ exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 # Setup
 title:               We Are Thought Fox
-description:         "We're a tiny studio 👽 with an anti-disciplinary approach 🦄 trying to make the web great again 💞"
+description:         "We're a digital studio 👽 with an interdisciplinary approach 🦄 trying to make the web great again 💞"
 tagline:             Making the web
 url:                 https://www.wearethoughtfox.com
 logo:                /images/LOGO-RGB.png
