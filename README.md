@@ -18,6 +18,9 @@ https://www.shareicon.net/arrow-up-app-ui-essential-884106
 ## Pagination
 https://github.com/sverrirs/jekyll-paginate-v2
 
+## Sitemap
+https://github.com/jekyll/jekyll-sitemap
+
 ## Process
 1. npm install for gulp dependancies
 2. Customise _config.yml
