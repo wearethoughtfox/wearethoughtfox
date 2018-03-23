@@ -63,6 +63,8 @@
 .vh-100 { height: 100vh; }
 
 .min-vh-100 { min-height: 100vh; }
+.min-h5 { min-height: 24rem; }
+
 
 
 /* String Properties */
@@ -128,4 +130,6 @@
   .min-vh-100-l { min-height: 100vh; }
   .h-auto-l { height: auto; }
   .h-inherit-l { height: inherit; }
+
+  .min-h6-l { min-height: 32rem; }
 }
