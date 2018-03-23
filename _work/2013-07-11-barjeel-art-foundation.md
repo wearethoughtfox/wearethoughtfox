@@ -1,5 +1,5 @@
 ---
-title: Website — Barjeel
+title: Barjeel Art Foundation
 date: 2013-07-11T14:27:26+00:00
 excerpt: A ground-up rebranding and website design and build.
 layout: work
