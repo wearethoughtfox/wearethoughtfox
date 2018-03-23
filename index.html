@@ -126,7 +126,11 @@ layout: default
  var typed = new Typed("#typed", {
     strings: ["delightful", "readable", "fast", "open", "make sense", "trustworthy"],
     onComplete: typingComplete,
-    showCursor: false
+    showCursor: false,
+    typeSpeed: 45,
+    backSpeed: 20,
+    backDelay: 500,
+    startDelay: 1000
   });
 
   function typingComplete() {
