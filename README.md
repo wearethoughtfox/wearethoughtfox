@@ -48,10 +48,11 @@ To install on Netlify, follow these instructions:
 4. Critical CSS generator
 5. Strikethrough hover: https://codepen.io/tsimenis/pen/BKdENX
 6. Text animation: http://tobiasahlin.com/moving-letters/
+7. Structured data: https://developers.google.com/search/docs/guides/search-gallery
+8. Backlinks
 
 ## Work - To add
 - WorldSkills map
-- Barjeel app
 - MSN
 - REC
 - Amnesty BRAVE
