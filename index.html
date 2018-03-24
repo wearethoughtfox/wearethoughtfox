@@ -19,7 +19,7 @@ layout: default
 </header>
 
 <section id="section2">
-  <div class="center ph3 ph4-ns ph4-l pv4 pv5-l">
+  <div class="center ph3 ph4-ns ph4-l pv4 pv5-l" data-aos="fade-up">
     <h2 class="f4 f2-l secondary fw4 measure">We <span class="primary">bring ideas to life</span> on the web through research, design, making and storytelling. Take a look.</h2>
   </div>
 </section>
@@ -27,7 +27,7 @@ layout: default
 <section class="cf center ph3 ph4-ns pb5">
   {% assign publishedPosts = site.work | where: 'featured', 'true' %}
     {% for work in publishedPosts reversed limit:10 %}
-      <article class="fl w-100 w-33-l pa3-ns">
+      <article class="fl w-100 w-33-l pa3-ns" data-aos="fade-up">
         <a href="{{ work.url }}">
         <div class="aspect-ratio aspect-ratio--1x1">
           <img style="background-image:url({{ work.image }});"
@@ -44,8 +44,8 @@ layout: default
 
 <section id="sectors" class="pt4 pt0-l pb4 pt0-l bt b--black-10">
   <div class="cf mw9 ph3 ph4-l pb5-l center">
-  <div class="fr w-100 w-80-l">
-    <h2 class="mt4 mb3 mb5-ns f1 f-subheadline-l secondary">We’ve worked with
+  <div class="fr w-100 w-80-l" >
+    <h2 class="mt4 mb3 mb5-ns f1 f-subheadline-l secondary" data-aos="slide-up">We’ve worked with
     </h2>
   </div>
   <div class="f4 lh-copy fl w-100 mb4-ns">
