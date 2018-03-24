@@ -3,6 +3,8 @@ New company website using Jekyll, Tachyons and Netlify
 
 Temporary url: https://vigilant-brahmagupta-3ca639.netlify.com
 
+Gulp command compiles CSS, Jekyll, LiveReload. Watch out: Gulp doesn't watch the Tachyons subfolder so changes don't get updated.
+
 ## SEO tags
 Provided by https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 
@@ -47,7 +49,6 @@ To install on Netlify, follow these instructions:
 3. Get permalinks working locally - no .html
 4. Critical CSS generator
 5. Strikethrough hover: https://codepen.io/tsimenis/pen/BKdENX
-6. Text animation: http://tobiasahlin.com/moving-letters/
 7. Structured data: https://developers.google.com/search/docs/guides/search-gallery
 8. Backlinks
 
@@ -56,6 +57,7 @@ To install on Netlify, follow these instructions:
 - MSN
 - REC
 - Amnesty BRAVE
+- Amnesty Twitter
 
 ## Work - Types
 - Concept &amp; strategy
