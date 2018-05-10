@@ -14,6 +14,7 @@ layout: default
   </div>
   <div id="arrow" class="absolute center left-0 right-0 bottom-1 bottom-2-l w2 h2 fill-twitter-lightblue pointer-hover">
           <a href="#section2" class="fill-white">
+            <span class="sr-only">Go to section two</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"><path d="M20.1,16.3c-0.3,0-0.6-0.1-0.8-0.3L6.4,6.8C5.8,6.4,5.6,5.5,6.1,4.9C6.5,4.3,7.4,4.1,8,4.6l12.1,8.7l12.1-8.7 c0.6-0.4,1.5-0.3,1.9,0.3c0.4,0.6,0.3,1.5-0.3,1.9l-12.9,9.3C20.6,16.2,20.4,16.3,20.1,16.3z"></path></svg>
           </a>
         </div>
@@ -30,6 +31,7 @@ layout: default
     {% for work in publishedPosts reversed limit:10 %}
       <article class="fl w-100 w-33-l pa3-ns" data-aos="fade-up">
         <a href="{{ work.url }}">
+        <span class="sr-only">{{ work.title }}</span>
         <div class="aspect-ratio aspect-ratio--1x1">
           <img style="background-image:url({{ work.image }});"
           class="db bg-center cover aspect-ratio--object dim" />
