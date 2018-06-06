@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: wearethoughtfox/wearethoughtfox # Path to your Github repository
   branch: master # Branch to update (master by default)
 
