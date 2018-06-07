@@ -29,29 +29,16 @@ A quick and simple process for getting the latitude and longitude for a column o
 
 ## Export
 
-Geojson is a good format for the data. It is flexible and allows you to add your own data to the structure. It’s quite easy to read:
-
-`<br />
-"type": "Feature",<br />
-      "geometry": {<br />
-        "type": "Point",<br />
-        "coordinates": [<br />
-          -1.7895799,<br />
-          53.5716481<br />
-        ]<br />
-      }<br />
-`
-
-But it can be inefficient with large data sets and polygons (consider Topojson if project can work with modern browsers <IE8)
+Geojson is a good format for the data. It is flexible and allows you to add your own data to the structure. It’s quite easy to read, but it can be inefficient with large data sets and polygons (consider Topojson if project can work with modern browsers <IE8)
 
 To export:
 
-  1. Tools -> Script Editor
-  2. “Create new project”
-  3. “Blank Project”
-  4. Paste in this script -https://raw.githubusercontent.com/mapbox/geo-googledocs/master/MapBox.js
-  5. Publish->Deploy as Web App
-  6. Spreadsheet -> select rows -> Geo -> Export
+1. Tools -> Script Editor
+2. “Create new project”
+3. “Blank Project”
+4. Paste in this script -https://raw.githubusercontent.com/mapbox/geo-googledocs/master/MapBox.js
+5. Publish->Deploy as Web App
+6. Spreadsheet -> select rows -> Geo -> Export
 
 ## Display
 
