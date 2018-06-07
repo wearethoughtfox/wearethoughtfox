@@ -20,7 +20,7 @@ This idea is taken from the work on the [Cern website](http://home.web.cern.ch/)
 
 One of the trickiest parts of the ICC digital project is the diverse audiences and the difficult subject matter, so our make mantra &#8211; **justice for humanity** &#8211; is intended as a way to remind us about all our audiences and modulate what we say accordingly.
 
-![](http://68.media.tumblr.com/68eff8f89173876157a364011220cb76/tumblr_inline_muaksmyJwA1qzcojx.jpg)
+![ICC website make mantra graph](/images/blog-icc-make-mantra.jpg)
 
 At one side we have the general public, who have little understanding of the ICC and how it operates, but they have a need to connect with its mission on a human and emotional level. At the other side, we have lawyers and academics, who have a deep understanding of the ICC and international law. Everyone else fits somewhere on this scale.
 

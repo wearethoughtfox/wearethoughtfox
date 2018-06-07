@@ -82,9 +82,7 @@ To export:
 
 Digital maps tend to follow certain formats, but these examples show different and interesting approaches:
 
-  * [How Big
-
-    Really](http://berglondon.com/blog/2010/08/17/introducing-bbc-dimensions/)
+  * [How Big Really](http://berglondon.com/blog/2010/08/17/introducing-bbc-dimensions/)
   * [Prettymaps](http://prettymaps.stamen.com/201008/about/)
   * [Google Faces](http://www.onformative.com/lab/googlefaces/)
   * [Rorschmap](http://rorschmap.com/) [Geoguessr](https://geoguessr.com)

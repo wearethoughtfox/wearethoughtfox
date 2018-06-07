@@ -11,7 +11,7 @@ categories:
 tags:
   - hackshackers
 ---
-![Hack the Election](http://wearethoughtfox.com/site/wp-content/uploads/2015/03/hackelection1.jpg)
+![Hack the Election](/images/blog-hackelection1.jpg)
 
 The [fourth Hacks/Hackers Manchester was about the general election](http://www.meetup.com/HacksHackersMCR/events/220785131/). How can we make the upcoming general election more interesting to young people and encourage them to use their vote? Can we use games, apps and other tools to engage them in the democratic process or just to make it more fun?
 

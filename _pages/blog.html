@@ -9,29 +9,33 @@ pagination:
 
 {% include nav.html %}
 
-<h2>{{ page.title }}</h2>
+<section class="mw5 mw7-ns center pa3 ph5-ns">
 
   {% for post in paginator.posts %}
-  <article class="w-100">
-    <a href="#0" class="ph2 ph0-ns pb3 link db">
-      <h3 class="f5 f4-ns mb0">{{ post.title }}</h3>
+  <article class="pb4 mb5 blog">
+    <a href="{{ post.url }}" class="ph2 ph0-ns pb2 link db secondary underline-hover">
+      <h1 class="f2 fw4 mb0 lh-title">{{ post.title }}</h1>
     </a>
 
-    {{ post.content }}
+    <div class="f6 fw4 light-silver pb4">
+      {{ post.date | date_to_long_string }}
+    </div>
+
+    <div class="lh-copy measure">
+      {{ post.content }}
+    </div>
   </article>
   {% endfor %}
 
   {% if paginator.total_pages > 1 %}
-<ul>
+
   {% if paginator.previous_page %}
-  <li>
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' |  replace: 'index.html', '' }}">Newer</a>
-  </li>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' |  replace: 'index.html', '' }}" class="fl no-underline secondary underline-hover pb4">↫ Newer</a>
   {% endif %}
   {% if paginator.next_page %}
-  <li>
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' |  replace: 'index.html', '' }}">Older</a>
-  </li>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' |  replace: 'index.html', '' }}" class="fr no-underline secondary underline-hover pb4">Older ↬</a>
   {% endif %}
-</ul>
+
 {% endif %}
+
+</section>

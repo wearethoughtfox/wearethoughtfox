@@ -17,9 +17,6 @@ The [CMeebie project](http://wearethoughtfox.com/work/bbc-connected-studio-pilot
 
 During a great talk by BERG&#8217;s Jack Schulze, he summed up how lots of software and connected things are starting to go beyond straightforward responses to interactions with the phrase: &#8220;there&#8217;s no more U in UI&#8221;. Then he showed this video of a quadrocopter juggling a ball:
 
-<div class="videoWrapper">
-</div>
-
 That video sums up how software and connected things are starting to display qualities such as behaviour, motive and even agency.
 
 That&#8217;s what we were exploring in this BBC prototype. But the relationship between the child and the CMeebie needs to be established at the correct level. Taking cues from [existing discussions around companion-centred design](http://berglondon.com/blog/2010/09/04/b-a-s-a-a-p/), we decided the companion needed to be as “smart as a puppy” &#8211; far from being too smart to fail, the CMeebie needed to make endearing mistakes in its attempts to learn and improve. This approach reduces the chances of the so-called “uncanny valley” effect whereby users feel uncomfortable with an entity which behaves almost but not exactly like a human being.

@@ -18,13 +18,13 @@ layout: default
     </ul>
    </div>
 
-  <div class="fl-l w-50-l work-content pr3-l">
+  <div class="fl-l w-50-l work-content pr3-l pb4">
     {{ content }}
    </div>
 
 </article>
 
-  <aside class="cf mw5 mw8-ns pa3 ph5-ns bt b--black-10 center">
+  <aside class="cf mw5 mw8-ns pa3 pa4-l bt b--black-10 center">
   {% capture the_collection %}{{page.collection}}{% endcapture %}
     {% if page.collection %}
       {% assign  document = site[the_collection]  %}
@@ -54,7 +54,7 @@ layout: default
 
   {% if prevurl %}
   <div class="fl w-50 tc">
-    <h3 class="f4 f3-l light-silver">Previous project</h3>
+    <h3 class="f7 f6-l light-silver fw4 ttu tracked">Previous project</h3>
     <a href="{{ prevurl }}" class="secondary dim">{{ prevtitle }}</a>
 
   </div>
@@ -62,7 +62,7 @@ layout: default
 
   {% if nexturl %}
     <div class="fl w-50 tc">
-      <h3 class="f4 f3-l light-silver">Next project</h3>
+      <h3 class="f7 f6-l light-silver fw4 ttu tracked">Next project</h3>
       <a href="{{ nexturl }}" class="secondary dim">{{ nexttitle }}</a>
     </div>
   {% endif %}

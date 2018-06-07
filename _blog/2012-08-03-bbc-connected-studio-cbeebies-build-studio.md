@@ -19,7 +19,7 @@ As it turned out our idea wasn&#8217;t terribly original with another team pitch
 
 One of the best things about the event was the unique collaborations going on: the BBC had paired all manner of different companies together to create interesting combinations of technical and creative groups. It was a bold move which added to the frenzied energy and made the event feel even more special.
 
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2012/08/bbc-connected-studio-build1.jpg" alt="bbc-connected-studio-build1" class="alignnone size-full wp-image-348" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2012/08/bbc-connected-studio-build1.jpg 600w, http://wearethoughtfox.com/site/wp-content/uploads/2012/08/bbc-connected-studio-build1-580x422.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2012/08/bbc-connected-studio-build1-160x116.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2012/08/bbc-connected-studio-build1-400x291.jpg 400w" sizes="(max-width: 600px) 100vw, 600px" />
+![BBC Connected Studio](/images/blog-bbc-connected-studio-build1.jpg)
 
 We were a large team with various skills and this diversity made it difficult to focus at times. Yet the technical group knuckled down to create some interesting examples of how our idea might work on the web, while the creative group explored the full possibilities of the concept. This involved everything from planning interactions to sketching wireframes to developing user journeys.
 

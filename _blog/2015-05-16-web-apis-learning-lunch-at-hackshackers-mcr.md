@@ -12,7 +12,7 @@ categories:
 tags:
   - hackshackers
 ---
-![hackshackers web apis lunch](http://wearethoughtfox.com/site/wp-content/uploads/2015/05/hackshackers-web-apis.jpg)
+![hackshackers web apis lunch](/images/blog-hackshackers-web-apis.jpg)
 
 We tried something different this time. Inspired by a journalist called [Noah Veltman](https://github.com/veltman/learninglunches), we put on a HacksHackers Manchester &#8220;learning lunch&#8221;. We hope it will be a way for people to learn about and discuss important topics for journalism in the 21st century.
 

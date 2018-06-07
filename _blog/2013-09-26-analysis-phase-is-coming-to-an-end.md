@@ -26,6 +26,6 @@ We&rsquo;ve also talked to **representatives of the ICC organs and other stakeho
 
 All this work (which will be available here in the coming weeks) will guide and shape the next phase.
 
-We&rsquo;ll be working in &ldquo;sprints&rdquo; building &ldquo;<span>potentially shippable increments&rdquo; of the website. That means we start with the most important user needs and we design, build and test something to meet those needs, then we move on to the next sprint and repeat the process for another set of user needs. It&rsquo;s an exciting and effective way to work on the digital products and we hope it will work well at the ICC. </span>
+We&rsquo;ll be working in &ldquo;sprints&rdquo; building &ldquo; potentially shippable increments&rdquo; of the website. That means we start with the most important user needs and we design, build and test something to meet those needs, then we move on to the next sprint and repeat the process for another set of user needs. It&rsquo;s an exciting and effective way to work on the digital products and we hope it will work well at the ICC. 
 
-<span>If you have any questions or comments, please feel free to comment below or contact the Public Information and Documentation Section.  </span><span></span></p>
+If you have any questions or comments, please feel free to comment below or contact the Public Information and Documentation Section.

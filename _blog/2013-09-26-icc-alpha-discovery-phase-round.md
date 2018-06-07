@@ -6,8 +6,6 @@ author: Rob
 layout: blog
 guid: http://wearethoughtfox.com/?p=856
 permalink: /blog/icc-alpha-discovery-phase-round/
-medium_post:
-  - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:74:"https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png";s:10:"author_url";s:35:"https://medium.com/@wearethoughtfox";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:3:"yes";s:2:"id";s:12:"be6a36b388c2";s:21:"follower_notification";s:3:"yes";s:7:"license";s:14:"cc-40-by-nc-nd";s:14:"publication_id";s:2:"-1";s:6:"status";s:5:"draft";s:3:"url";s:48:"https://medium.com/@wearethoughtfox/be6a36b388c2";}'
 categories:
   - Blog
 tags:

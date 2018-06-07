@@ -13,29 +13,15 @@ categories:
 tags:
   - filtered
 ---
-<p class="intro">
-  Here&#8217;s a selection of what&#8217;s sparked our curiosity, piqued our interest and made us shudder (almost) with delight this week.
-</p>
+Here&#8217;s a selection of what&#8217;s sparked our curiosity, piqued our interest and made us shudder (almost) with delight this week.
 
 Una liked the way the Arrels Foundation have created a collection of typefaces based on the handwriting of homeless.
 
-<div class='videoWrapper'>
-</div>
-
 She also enjoyed this talk about the story of Airbnb and the growth of the sharing economy.
-
-<div class='videoWrapper'>
-</div>
 
 And finally from Una: a video of Tina RothEisenberg talking about side projects which turned into “labors of love”.
 
-<div class='videoWrapper'>
-</div>
-
 ## The Internet with a Human Face
-
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2014/07/bt14.001.thumb_.jpg" alt="The Internet with a human face" class="alignleft size-full wp-image-587" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2014/07/bt14.001.thumb_.jpg 500w, http://wearethoughtfox.com/site/wp-content/uploads/2014/07/bt14.001.thumb_-160x99.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2014/07/bt14.001.thumb_-400x249.jpg 400w" sizes="(max-width: 500px) 100vw, 500px" />
-
 I found much to chew over in [this great talk](http://idlewords.com/bt14.htm) by Maciej Cegłowski (of [Pinboard](http://pinboard.in/)) from Beyond Tellerrand in Düsseldorf, Germany. Here&#8217;s a few choice morsels:
 
 > a lot of what&#8217;s wrong with the Internet has to do with memory. The Internet somehow contrives to remember too much and too little at the same time, and it maps poorly on our concepts of how memory should work. [&#8230;]

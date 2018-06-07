@@ -14,6 +14,7 @@ tags:
   - Art Direction
   - Barjeel Art Foundation
 ---
-<img class="alignnone size-full wp-image-399" alt="Barjeel spray paint stencils" src="http://wearethoughtfox.com/site/wp-content/uploads/2013/07/spray.jpg" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2013/07/spray.jpg 700w, http://wearethoughtfox.com/site/wp-content/uploads/2013/07/spray-580x393.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2013/07/spray-160x108.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2013/07/spray-600x407.jpg 600w, http://wearethoughtfox.com/site/wp-content/uploads/2013/07/spray-400x271.jpg 400w" sizes="(max-width: 700px) 100vw, 700px" />
+
+![Barjeel Art Foundation spray design](/images/blog-spray.jpg)
 
 I’ve been digging through my archives and I stumbled upon a particularly fun moment from our Barjeel Art Foundation redesign. One ambitious tangent we explored was a spray paint logo which would be part of a viral, youth-oriented campaign. Messy and fun!

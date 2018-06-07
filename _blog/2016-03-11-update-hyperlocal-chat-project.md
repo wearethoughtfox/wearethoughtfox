@@ -1,14 +1,12 @@
 ---
 id: 807
-title: 'Update &#8211; Hyperlocal chat project'
+title: 'Update — Hyperlocal chat project'
 date: 2016-03-11T14:48:40+00:00
 author: Rob
 excerpt: 'The latest about our chatbot project for hyperlocal news and information. '
 layout: blog
 guid: http://wearethoughtfox.com/?p=807
 permalink: /blog/update-hyperlocal-chat-project/
-medium_post:
-  - 'O:11:"Medium_Post":11:{s:16:"author_image_url";s:74:"https://cdn-images-1.medium.com/fit/c/200/200/1*dmbNkD5D-u45r44go_cf0g.png";s:10:"author_url";s:35:"https://medium.com/@wearethoughtfox";s:11:"byline_name";N;s:12:"byline_email";N;s:10:"cross_link";s:3:"yes";s:2:"id";s:12:"2406793aa1b4";s:21:"follower_notification";s:3:"yes";s:7:"license";s:14:"cc-40-by-nc-nd";s:14:"publication_id";s:2:"-1";s:6:"status";s:5:"draft";s:3:"url";s:48:"https://medium.com/@wearethoughtfox/2406793aa1b4";}'
 image: /site/wp-content/uploads/2016/03/arndalepostbox-1-160x109.jpg
 categories:
   - Blog
@@ -17,13 +15,12 @@ tags:
   - conversational-ui
   - media
 ---
-We&#8217;ve been working on a [conversational UI for news and information](http://wearethoughtfox.com/blog/conversational-ui-part-1/) with [Trinity Mirror Regionals](http://manchestereveningnews.co.uk/).  The idea for a product has emerged from that work. Here&#8217;s an attempt to show where we are up to at the moment.
+We’ve been working on a [conversational UI for news and information](http://wearethoughtfox.com/blog/conversational-ui-part-1/) with [Trinity Mirror Regionals](http://manchestereveningnews.co.uk/). The idea for a product has emerged from that work. Here’s an attempt to show where we are up to at the moment.
 
 ## Introduction
-
 We are creating social objects from a neighbourhood’s existing infrastructure which citizens can converse via SMS, Twitter, Telegram and other messaging services to “get in the know” about a specific place.
 
-<img class="alignleft size-full wp-image-809" src="http://wearethoughtfox.com/site/wp-content/uploads/2016/03/arndalepostbox.jpg" alt="Arndale Postbox on Twitter" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2016/03/arndalepostbox.jpg 640w, http://wearethoughtfox.com/site/wp-content/uploads/2016/03/arndalepostbox-580x435.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2016/03/arndalepostbox-160x120.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2016/03/arndalepostbox-600x450.jpg 600w, http://wearethoughtfox.com/site/wp-content/uploads/2016/03/arndalepostbox-400x300.jpg 400w" sizes="(max-width: 640px) 100vw, 640px" />
+![Screenshot of the Arndale Postbox Twitter account](/images/blog-arndalepostbox.jpg)
 
 Our approach goes beyond conventional approaches to open data such as data visualisation, maps, etc and towards humanised suggestions that prompt and guide individual action. The social object speaks in the first person, answering questions as part of a dialogue in a different context for journalism, ie next to friends and other services in SMS and chat apps.
 
@@ -38,7 +35,7 @@ The main questions are:
 
 The two key challenges are acquisition and retention. Hyperlocal news is helpful because it gives a reason to follow and excuse for the service to remind you it exists once every day or two. The more fun features can be built on top of that core interaction.
 
-The other questions are around the nature of the objects &#8211; single or multiple use, spoke only when spoken to or listening and push out? And how do we make people aware of the services available? This is where being embedded in a city will help &#8211; stickers, posters, etc &#8211; and having a media company on board &#8211; adverts, promos, etc.
+The other questions are around the nature of the objects — single or multiple use, spoke only when spoken to or listening and push out? And how do we make people aware of the services available? This is where being embedded in a city will help — stickers, posters, etc — and having a media company on board — adverts, promos, etc.
 
 ## Status
 
@@ -52,7 +49,6 @@ A general-purpose Twitter bot that responds to a variety of commands. The main p
   * The big issue for me is <https://github.com/robertocarroll/chatui/issues/36> How to make Hubot understand threads and context. A user can reply and the conversation can carry on.
 
 ### PiccadillyWall
-
 A single-purpose Twitter bot that tells you about where to get a burger in the city centre.
 
   * <https://twitter.com/piccadillywall> A Twitter bot around service discovery specifically burger restaurants. Responds to questions around &#8216;burger nearest&#8217;, &#8216;burger cheapest&#8217;, &#8216;burger best&#8217;, &#8216;burger cleanest&#8217;.
@@ -76,7 +72,7 @@ Another area to explore is how we can encourage sharing and encounters in the ar
 
 ### Technical
 
-The main technical innovation and challenge is to build a coherent, accessible and consistent service on top of existing services and without expensive hardware. There isn’t an app, user logins or even much of a website &#8211; everything runs on top of other services through a conversational interface. The chat engine itself is quite primitive at the moment. So far we’ve used the tone and structure of the conversation to develop the experience. It doesn’t involve complex natural language processing nor does it detect and account for context changes in user inputs. We are starting to develop an approach to handling errors and null responses appropriately, preferring to be “as smart as a puppy” rather than trying to respond intelligently to everything. These are points we’d like to explore and develop further, perhaps allowing users to have extended conversations, as well as customise the service to suit their needs over time.
+The main technical innovation and challenge is to build a coherent, accessible and consistent service on top of existing services and without expensive hardware. There isn’t an app, user logins or even much of a website — everything runs on top of other services through a conversational interface. The chat engine itself is quite primitive at the moment. So far we’ve used the tone and structure of the conversation to develop the experience. It doesn’t involve complex natural language processing nor does it detect and account for context changes in user inputs. We are starting to develop an approach to handling errors and null responses appropriately, preferring to be “as smart as a puppy” rather than trying to respond intelligently to everything. These are points we’d like to explore and develop further, perhaps allowing users to have extended conversations, as well as customise the service to suit their needs over time.
 
 Another innovation will be to create the illusion of a connected object without the usual dependence on electricity, radio, etc. By adopting existing objects in the city, we can bind the experience to a physical object with a location, providing users with a mental model and fixed location for the interaction. We can get many of the benefits of a connected object without the associated issues and expense.
 
@@ -84,17 +80,17 @@ Another innovation will be to create the illusion of a connected object without 
 
 The product will likely consist of:
 
-  1. Conversations answering questions people have about the city as well as ways to gather and collate information from people
-  2. A chat system to manage these conversations, including ways to see conversations and monitor metrics such as number of conversations, unique users, etc.
-  3. Adapters for various messenger apps
-  4. A collection and analysis system to gather data such as local tweets, images, etc.
-  5. A push notification system to send out this information to users
-  6. A way for users to personalise what they receive
-  7. Ways to make people aware of the service and what it can do, e.g. posters in the city, adverts in the paper, etc.
+1. Conversations answering questions people have about the city as well as ways to gather and collate information from people
+2. A chat system to manage these conversations, including ways to see conversations and monitor metrics such as number of conversations, unique users, etc.
+3. Adapters for various messenger apps
+4. A collection and analysis system to gather data such as local tweets, images, etc.
+5. A push notification system to send out this information to users
+6. A way for users to personalise what they receive
+7. Ways to make people aware of the service and what it can do, e.g. posters in the city, adverts in the paper, etc.
 
 ## Similar projects
 
-Here&#8217;s a [good summary of chat UIs](https://medium.com/@tedlivingston/the-future-of-chat-isn-t-ai-b07f65bc252).
+Here‘s a [good summary of chat UIs](https://medium.com/@tedlivingston/the-future-of-chat-isn-t-ai-b07f65bc252).
 
 ### Chat UI
 
@@ -112,5 +108,4 @@ Here&#8217;s a [good summary of chat UIs](https://medium.com/@tedlivingston/the-
   4. <https://lasttramfrom.co.uk/>
 
 ### Service discovery and information in the city
-
 Previous approaches to providing physical information points in a city revolve around kiosks with touch screens. These are expensive and are proven to be under-utilised. If you create a mobile app for local news and information, a user has download it, limiting the audience and keeping the entire experience tied to the screen. We prefer to build on top of existing infrastructure and technologies, stitching together existing services with established communities to create valuable new services in the city.

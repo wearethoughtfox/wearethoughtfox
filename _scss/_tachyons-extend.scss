@@ -124,16 +124,6 @@ h1 {
   font-weight: 600;
 }
 
-h2 {
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-h3 {
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
-}
 
 //_max-widths
 .mw4-5  {  max-width: 12rem; }
@@ -145,11 +135,21 @@ h3 {
   column-gap: 2em;
 }
 
-.work-content p {
+.work-content p, .blog p {
   @extend .pb3;
 }
 
-p a {
+.blog h2 {
+  @extend .f3;
+  @extend .fw4;
+}
+
+.blog h3 {
+  @extend .f4;
+  @extend .fw4;
+}
+
+p a, li a {
   @extend .primary;
   @extend .dim;
 }

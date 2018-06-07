@@ -23,6 +23,6 @@ ICC Alpha, a prototype which contains ideas and solutions for some of the most i
 
 It is by no means complete, but we are releasing ICC Alpha now because we want to hear your comments about the approach that we are taking.
 
-If you are interested in reviewing ICC Alpha and providing feedback, please [get in touch](http://iccalpha@gmail.com) and we will send you the details.
+If you are interested in reviewing ICC Alpha and providing feedback, please get in touch (link no longer working) and we will send you the details.
 
 Your comments and thoughts will help us to improve the new website.

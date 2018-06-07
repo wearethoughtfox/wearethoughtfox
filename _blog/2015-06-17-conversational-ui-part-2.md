@@ -1,6 +1,6 @@
 ---
 id: 698
-title: 'Conversational UIs and bots for news and information &#8211; Part 2'
+title: 'Conversational UIs and bots for news and information — Part 2'
 date: 2015-06-17T09:05:25+00:00
 author: Rob
 layout: blog
@@ -32,15 +32,15 @@ In sprint 2 we changed the adapter from Campfire to [Twilio](http://twilio.com/)
 
 Local news worked well. The interaction felt natural and useful, providing value beyond any existing service and sitting conceptually somewhere between the web and a newspaper. It surfaces neighbourhood articles which might be lost in other mediums, e.g. web, Twitter which focus on latest.
 
-![News via SMS](http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-news.jpg)
+![News via SMS](/images/blog-men-project.002-news.jpg)
 
 Weather was OK, but it felt a bit pointless. It needed to be more useful, unique and specific. Other apps do the weather better. We wondered if perhaps a specific question would work, e.g. is it going to rain in the next hour?
 
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather.jpg" alt="Weather via SMS" class="alignleft size-full wp-image-700" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather.jpg 741w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather-386x580.jpg 386w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather-682x1024.jpg 682w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather-80x120.jpg 80w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather-400x600.jpg 400w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather-666x1000.jpg 666w, http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-weather-267x400.jpg 267w" sizes="(max-width: 741px) 100vw, 741px" />
+![Weather via SMS](/images/blog-men-project.002-weather.jpg)
 
 A bit of personality worked well such as knowing the time of day and the weather and responding accordingly, but having menus inside the application did not work and felt a bit confusing and wasteful.
 
-![Personality and options](http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-hello.jpg)
+![Personality and options](/images/blog-men-project.002-hello.jpg)
 
 ## Tentative findings
 
@@ -56,9 +56,9 @@ A quick chat with [Tom Armitage](http://tomarmitage.com/), who worked on Hello L
 
 The conversation is probably going to follow a shape like this:
 
-![The shape of a conversation](http://wearethoughtfox.com/site/wp-content/uploads/2015/06/men-project.002-converse.jpg)
+![The shape of a conversation](/images/blog-men-project.002-converse.jpg)
 
-This shape also led us to explore what to do with the secondary interaction. Could we gather information from user? Could the user customise the service by responding to the first SMS with those preferences remembered so that the service improves over time, a bit like &#8211; as Tom pointed out &#8211; the [homotropic newspaper-vending robot in Philip K Dick’s novel The Game-Players of Titan](http://www.technovelgy.com/ct/content.asp?Bnum=1668)?
+This shape also led us to explore what to do with the secondary interaction. Could we gather information from user? Could the user customise the service by responding to the first SMS with those preferences remembered so that the service improves over time, a bit like — as Tom pointed out — the [homotropic newspaper-vending robot in Philip K Dick’s novel The Game-Players of Titan](http://www.technovelgy.com/ct/content.asp?Bnum=1668)?
 
 In the end, the focus came down to being useful. Sprint 3 would focus on user needs with a playful personality. The system could become a convenient way to access the many APIs and data about the city. We would explore the usual suspects such as neighbourhood news, weather, travel delays and departures and open data such as neighbourhood statistics and census information as well as whether it was a good way to gather information from users.
 
@@ -66,8 +66,6 @@ We also decided to move from SMS to Twitter to avoid the question of cost to the
 
 This post is part of a series about a project exploring conversational UIs for news and information to help Manchester Evening News become part of the fabric of the city.
 
-[Part 1](http://wearethoughtfox.com/blog/conversational-ui-part-1/)
-
-→ Part 2
-
-[Part 3](http://wearethoughtfox.com/blog/conversational-uis-part-3/)
+* [Part 1](/blog/conversational-ui-part-1/)
+* → Part 2
+* [Part 3](/blog/conversational-uis-part-3/)

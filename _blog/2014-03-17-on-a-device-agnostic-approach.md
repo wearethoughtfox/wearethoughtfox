@@ -14,40 +14,36 @@ tags:
   - web
 ---
 ## 2010
-
 Only a few years ago, most people went online using a desktop or a laptop.
 
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1.jpg" alt="Desktop computer" class="alignleft size-full wp-image-786" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1.jpg 640w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-580x435.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-160x120.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-600x450.jpg 600w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-1-400x300.jpg 400w" sizes="(max-width: 640px) 100vw, 640px" />
+![A desktop computer](/images/blog-device-agnostic-1.jpg)
 
 [CC Image courtesy of Rakesh Ashok on Flickr](https://flic.kr/p/7B2pRA)
 
 ## Today and beyond
-
 Now people use a myriad of devices over a varying connections summed up as “[hostile browsers, tiny screens, slow connection speeds, touch inputs](http://trentwalton.com/2014/03/10/device-agnostic/)”
 
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-2.jpg" alt="Device lab" class="alignleft size-full wp-image-780 padding-top" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-2.jpg 640w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-2-580x435.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-2-160x120.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-2-600x450.jpg 600w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-2-400x300.jpg 400w" sizes="(max-width: 640px) 100vw, 640px" />
+![Many mobile devices](/images/blog-device-agnostic-2.jpg)
 
 [CC Image courtesy of Jeremy Keith on Flickr](https://flic.kr/p/kiYKaK)
 
 ## 2017
-
 Tablets and smartphones will make up most of the sales of connected devices
 
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-3.jpg" alt="Worldwide connected device forecast" class="alignleft size-full wp-image-794" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-3.jpg 469w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-3-160x98.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-3-400x244.jpg 400w" sizes="(max-width: 469px) 100vw, 469px" />
+![Graph of mobile device growth](/images/blog-device-agnostic-3.jpg)
 
 Image from [IDC](http://www.idc.com/getdoc.jsp?containerId=prUS24314413)
 
 ## A mobile world
-
 Mobile is often the only point of internet access in some parts of the world
 
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-4.jpg" alt="Mobile&#039;s share of webviews around the world" class="alignleft size-full wp-image-792" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-4.jpg 728w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-4-580x435.jpg 580w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-4-160x120.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-4-600x450.jpg 600w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-4-400x300.jpg 400w" sizes="(max-width: 728px) 100vw, 728px" />
+![Map of mobile share of web views](/images/blog-device-agnostic-4.jpg)
 
 Image from [We Are Social](http://wearesocial.net/blog/2014/01/social-digital-mobile-worldwide-2014/)
 
 ## Are we building a digital product for yesterday or tomorrow?
 
-<img src="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-5.jpg" alt="Monthly active users for mobile and non-mobile" class="alignleft size-full wp-image-797" srcset="http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-5.jpg 505w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-5-160x120.jpg 160w, http://wearethoughtfox.com/site/wp-content/uploads/2015/12/device-agnostic-5-400x299.jpg 400w" sizes="(max-width: 505px) 100vw, 505px" />
+![Projected mobile device growth](/images/blog-device-agnostic-5.jpg)
 
 See [this post](http://www.lukew.com/ff/entry.asp?1841) for lots more stats
 
