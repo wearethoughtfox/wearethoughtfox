@@ -51,5 +51,7 @@ defaults:
 navigation:
  - title: Work
    url: /work
+- title: Blog
+   url: /blog
  - title: Info
    url: /info
