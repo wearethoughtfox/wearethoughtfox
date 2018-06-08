@@ -1,13 +1,6 @@
 ---
-id: 111
-title: 'BBC Connected Studio &#8211; CBeebies Build Studio'
-date: 2012-08-03T12:03:34+00:00
-author: Rob
-excerpt: 'We Are Thought Fox were lucky enough to make it through to the CBeebies Build Studio stage of BBC Connected Studio, two days of rapid prototyping to develop the idea into a proof of concept. '
 layout: work
-guid: http://wearethoughtfox.com/?p=111
-permalink: /blog/bbc-connected-studio-cbeebies-build-studio/
-image: /site/wp-content/uploads/2012/08/bbc-connected-studio-build1-160x116.jpg
+title: BBC Connected Studio — CBeebies Build Studio
 categories:
   - Blog
 tags:
