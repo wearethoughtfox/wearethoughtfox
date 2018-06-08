@@ -17,4 +17,4 @@ Responsive typography boils down to:
 4. Clear colour contrast
 5. Discern text and images
 
-So many people have written great things on this subject, but I find these points in my notes and wanted to get them down.
+So many people have written great things on this subject, but I found these points in my notes and wanted to get them down.
