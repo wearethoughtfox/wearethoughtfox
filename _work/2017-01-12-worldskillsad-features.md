@@ -4,12 +4,11 @@ layout: work
 slug: worldskillsad-features
 title: Skills Unite Us
 featured: true
-categories:
-- Work
 image: /images/work-wsad-feature-grey-square.jpg
+mainimage:
 type:
-  - 'Concept &amp; strategy'
-  - Digital development
+  - Research
+  - Web development
 excerpt: Concept, design and development of inspiring stories
 ---
 

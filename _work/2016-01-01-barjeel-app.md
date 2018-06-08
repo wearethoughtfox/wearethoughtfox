@@ -7,6 +7,7 @@ slug: barjeel-app
 slideshow:
   - "7"
 image: /images/work-barjeel-app-square.jpg
+mainimage:
 categories:
   - Work
 type:

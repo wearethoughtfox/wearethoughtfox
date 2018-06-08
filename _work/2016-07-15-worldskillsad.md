@@ -6,11 +6,12 @@ title: WorldSkills Abu Dhabi 2017
 categories:
 - Work
 image: /images/work-wsad-square.jpg
+mainimage:
 type:
-  - Concept &amp; strategy
-  - Art direction &amp; design
+  - Research
+  - Design
   - Data &amp; maps
-  - Digital development
+  - Web development
 excerpt: Concept, design and development of a responsive website
 ---
 
