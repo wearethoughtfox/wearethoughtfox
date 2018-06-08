@@ -50,8 +50,8 @@ defaults:
 
 navigation:
 - title: Work
-  url: /work
+  url: /work/
 - title: Blog
-  url: /blog
+  url: /blog/
 - title: Info
-  url: /info
+  url: /info/
