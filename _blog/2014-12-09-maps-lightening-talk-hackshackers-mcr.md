@@ -1,11 +1,6 @@
 ---
-id: 646
-title: 'Maps &#8211; Lightening talk at Hacks/Hackers MCR'
-date: 2014-12-09T10:25:00+00:00
-author: Rob
 layout: blog
-guid: http://wearethoughtfox.com/?p=646
-permalink: /blog/maps-lightening-talk-hackshackers-mcr/
+title: Maps — Lightening talk at Hacks/Hackers MCR
 categories:
   - Blog
 tags:
