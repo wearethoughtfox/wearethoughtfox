@@ -60,7 +60,7 @@ To install on Netlify, follow these instructions:
 - Amnesty Twitter
 
 ## Work - Types
-- Concept &amp; strategy
+- Research
 - Data &amp; maps
-- Digital development
-- Art direction &amp; design
+- Web development
+- Design
