@@ -1,13 +1,6 @@
 ---
-id: 661
-title: 'Leeds Creative Labs &#8211; Hepworth Edition'
-date: 2015-05-29T11:05:07+00:00
-author: Rob
-excerpt: 'Updates on our work at Leeds Creative Labs - Hepworth Edition.'
 layout: blog
-guid: http://wearethoughtfox.com/?p=661
-permalink: /blog/leeds-creative-labs-hepworth/
-image: /site/wp-content/uploads/2015/05/hepworth-leeds-160x99.jpg
+title: Leeds Creative Labs — Hepworth Edition
 categories:
   - Blog
 tags:
