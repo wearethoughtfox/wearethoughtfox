@@ -1,9 +1,62 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+{% include nav.html %}
+
+<section class="mw5 mw7-ns center pa3 ph5-ns">
+  <article class="pb4 mb5 blog">
+    <h1 class="f2 fw4 mb0 lh-title">{{ page.title }}</h1>
+
+    <div class="f6 fw4 light-silver pb4">
+      {{ page.date | date_to_long_string }}
+    </div>
+
+    <div class="lh-copy measure">
+      {{ content }}
+    </div>
+  </article>
+
+  <aside class="cf pv4 bt b--black-10">
+
+  {% capture the_collection %}{{page.collection}}{% endcapture %}
+    {% if page.collection %}
+      {% assign  document = site[the_collection]  %}
+    {% endif %}
+
+  {% for links in document  %}
+    {% if links.title == page.title %}
+      {% unless forloop.first %}
+        {% assign prevurl = prev.url %}
+        {% assign prevtitle = prev.title %}
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next = document[forloop.index] %}
+        {% assign nexturl = next.url %}
+        {% assign nexttitle = next.title %}
+      {% endunless %}
+    {% endif %}
+    {% assign prev = links %}
+  {% endfor %}
+
+  <script>
+  document.body.onkeyup = function(e){
+    if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
+    if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+  };
+  </script>
+
+  {% if prevurl %}
+  <div class="fl w-50">
+    <a href="{{ prevurl }}" class="f7 f6-l light-silver fw4 secondary dim">↫ Previous</a>
+
+  </div>
+  {% endif %}
+
+  {% if nexturl %}
+    <div class="fl w-50 tr">
+      <a href="{{ nexturl }}" class="f7 f6-l light-silver fw4 secondary dim">Next ↬</a>
+    </div>
+  {% endif %}
+  </aside>
+</section>
