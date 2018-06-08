@@ -1,15 +1,6 @@
 ---
-id: 833
-title: 'ICC Alpha &#8211; Competitor review'
-date: 2013-10-11T13:56:16+00:00
-author: Rob
 layout: blog
-guid: http://wearethoughtfox.com/blog/competitor-review/
-permalink: /blog/icc-alpha-competitor-review/
-tumblr_new-icc_permalink:
-  - http://new-icc.tumblr.com/post/63730627243/competitor-review
-tumblr_new-icc_id:
-  - "63730627243"
+title: ICC Alpha — Competitor review
 categories:
   - Blog
 tags:
