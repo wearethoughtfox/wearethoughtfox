@@ -1,11 +1,6 @@
 ---
-id: 856
-title: 'ICC Alpha &#8211; Discovery phase round up'
-date: 2013-09-26T08:24:03+00:00
-author: Rob
 layout: blog
-guid: http://wearethoughtfox.com/?p=856
-permalink: /blog/icc-alpha-discovery-phase-round/
+title: ICC Alpha — Discovery phase round up
 categories:
   - Blog
 tags:
