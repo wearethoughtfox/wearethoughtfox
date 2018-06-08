@@ -1,15 +1,6 @@
 ---
-id: 834
-title: 'ICC Alpha &#8211; Initial information architecture and the shape of the ICC alpha'
-date: 2013-10-10T15:11:00+00:00
-author: Rob
 layout: blog
-guid: http://wearethoughtfox.com/blog/initial-information-architecture-and-the-shape-of/
-permalink: /blog/icc-alpha-initial-information-architecture-and-the-shape-of/
-tumblr_new-icc_permalink:
-  - http://new-icc.tumblr.com/post/63647571302/initial-information-architecture-and-the-shape-of
-tumblr_new-icc_id:
-  - "63647571302"
+title: ICC Alpha — Initial information architecture and the shape of the ICC alpha
 categories:
   - Blog
 tags:
