@@ -26,6 +26,26 @@ html {
 .f-headline { font-size: 6rem; }
 .f-subheadline { font-size: 5rem;}
 
+.dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+}
+
 h1,.f1 { font-size: 3rem; }
 h2,.f2 { font-size: 2.25rem; }
 h3,.f3 { font-size: 1.5rem; }
@@ -137,6 +157,10 @@ h1 {
 
 .work-content p, .blog p {
   @extend .pb3;
+}
+
+.work-content a, .blog a {
+  @extend .dont-break-out;
 }
 
 .blog h2 {
