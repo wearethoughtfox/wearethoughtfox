@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: JavaScript functions example
+date: 2018-06-06T19:03:02+00:00
 categories:
   - Blog
 tags:

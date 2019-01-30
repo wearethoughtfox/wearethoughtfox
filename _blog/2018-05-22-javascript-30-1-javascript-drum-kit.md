@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: 'JavaScript 30 - #1 - JavaScript Drum Kit'
+date: 2018-05-22T19:03:02+00:00
 categories:
   - Blog
 tags:

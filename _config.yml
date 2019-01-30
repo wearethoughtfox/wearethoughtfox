@@ -9,7 +9,6 @@ description:         "A design and development studio 👽 making the web 💞 w
 tagline:             Making the web
 url:                 https://www.wearethoughtfox.com
 logo:                /images/LOGO-RGB.png
-tel:                 +971552810637
 email:               hello@wearethoughtfox.com
 calltoaction:        "Get in touch"
 footer:              "We Are Thought Fox Ltd, Registered in England and Wales, no. 8051628."
@@ -33,6 +32,7 @@ pagination:
   per_page: 5
   permalink: '/page/:num/'
   sort_reverse : true
+  debug: true
 
 include:
   - _pages

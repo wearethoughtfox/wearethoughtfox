@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Notes from "Intro to D3"
+date: 2018-05-18T19:03:02+00:00
 categories:
   - Blog
 tags:
