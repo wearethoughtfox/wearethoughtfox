@@ -32,7 +32,7 @@ pagination:
   per_page: 5
   permalink: '/page/:num/'
   sort_reverse : true
-  debug: true
+  debug: false
 
 include:
   - _pages
