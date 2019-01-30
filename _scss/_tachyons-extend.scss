@@ -278,6 +278,43 @@ ul.dash > li:before {
 }
 
 code {
-  @extend: .f6;
+  @extend .f6;
   white-space: pre-wrap;
+  @extend .dont-break-out;
+}
+
+blockquote {
+  @extend .f5;
+  @extend .pl4;
+  @extend .ml1;
+  @extend .mb4;
+  @extend .i;
+  @extend .mid-gray;
+  @extend .bl;
+  @extend .bw2;
+  @extend .b--silver;
+}
+
+blockquote p:last-child {
+  padding-bottom: 0;
+}
+
+cite {
+  @extend .f6;
+  @extend .ttu;
+  @extend .tracked;
+  @extend .fs-normal;
+}
+
+.dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
 }
