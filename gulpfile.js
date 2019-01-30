@@ -12,38 +12,9 @@ var messages = {
 };
 
 /**
- * Build the Jekyll Site
- */
-gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-        .on('close', done);
-});
-
-/**
- * Rebuild Jekyll & do page reload
- */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
-});
-
-/**
- * Wait for jekyll-build, then launch the Server
- */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
-    browserSync({
-        port: 4000,
-        server: {
-            baseDir: '_site'
-        },
-        browser: 'google chrome'
-    });
-});
-
-/**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
-gulp.task('sass', function () {
+gulp.task('sass', gulp.series(function (done) {
 
     return gulp.src('_scss/main.scss')
         .pipe(sass({
@@ -55,11 +26,42 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
-});
+}));
 
 
+/**
+ * Build the Jekyll Site
+ */
+gulp.task('jekyll-build', gulp.series(function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+        .on('close', done);
+}));
 
-gulp.task('critical', function () {
+/**
+ * Rebuild Jekyll & do page reload
+ */
+gulp.task('jekyll-rebuild', gulp.series('jekyll-build', function (done) {
+    browserSync.reload();
+    done();
+}));
+
+/**
+ * Wait for jekyll-build, then launch the Server
+ */
+gulp.task('browser-sync', gulp.series('sass', 'jekyll-build', function(done) {
+    browserSync({
+        port: 4000,
+        server: {
+            baseDir: '_site'
+        },
+        browser: 'google chrome'
+    });
+     done();
+}));
+
+
+gulp.task('critical', gulp.series(function (done) {
   critical.generate({
     base: './',
     src: '_site/index.html',
@@ -74,19 +76,20 @@ gulp.task('critical', function () {
     }],
     minify: true
   });
-});
+   done();
+}));
 
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
-gulp.task('watch', function () {
-    gulp.watch('_scss/**/*.scss', ['sass']);
-    gulp.watch(['*.html', '_pages/*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_blog/*', '_work/*', 'style-guide/*'], ['jekyll-rebuild']);
-});
+gulp.task('watch', gulp.parallel(function () {
+    gulp.watch('_scss/**/*.scss', gulp.series('sass'));
+    gulp.watch(['*.html', '_pages/*.html', '_layouts/*.html', '_includes/*.html', '_posts/*', '_blog/*', '_work/*', 'style-guide/*'], gulp.series('jekyll-rebuild'));
+}));
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['critical','browser-sync', 'watch']);
+gulp.task('default', gulp.series('critical','browser-sync', 'watch'));
