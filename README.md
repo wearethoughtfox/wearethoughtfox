@@ -26,16 +26,15 @@ https://github.com/sverrirs/jekyll-paginate-v2
 https://github.com/jekyll/jekyll-sitemap
 
 ## Process
-1. npm install for gulp dependancies
-2. Customise _config.yml
-3. Customise admin/config.yml
-4. Customise _scss/_variables
-5. Generate favicons: https://realfavicongenerator.net
-6. Google Analytics
-7. Google Webmaster
-8. Sitemaps
-9. Customise gulp for folders for Jekyll build
-10. Jekyll layouts and includes
+
+1. Customise _config.yml
+2. Customise admin/config.yml
+3. Customise _scss/_variables
+4. Generate favicons: https://realfavicongenerator.net
+5. Google Analytics
+6. Google Webmaster
+7. Sitemaps
+8. Jekyll layouts and includes
 
 ## Netlify set up
 To install on Netlify, follow these instructions:
@@ -46,13 +45,12 @@ To install on Netlify, follow these instructions:
 - Use Github for authentication https://www.netlify.com/docs/authentication-providers/#using-an-authentication-provider
 
 ## To do
-1. Image gulp process workflow
-2. Accessibility: http://a11yproject.com/checklist.html / http://pa11y.org
-3. Get permalinks working locally - no .html
-4. Critical CSS generator
-5. Strikethrough hover: https://codepen.io/tsimenis/pen/BKdENX
-7. Structured data: https://developers.google.com/search/docs/guides/search-gallery
-8. Backlinks
+- Accessibility: http://a11yproject.com/checklist.html / http://pa11y.org
+- Get permalinks working locally - no .html
+- Critical CSS generator
+- Strikethrough hover: https://codepen.io/tsimenis/pen/BKdENX
+- Structured data: https://developers.google.com/search/docs/guides/search-gallery
+- Backlinks
 
 ## Work - To add
 - WorldSkills map
