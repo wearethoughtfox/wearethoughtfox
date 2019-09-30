@@ -3,7 +3,9 @@ New company website using Jekyll, Tachyons and Netlify
 
 Temporary url: https://vigilant-brahmagupta-3ca639.netlify.com
 
-Gulp command compiles CSS, Jekyll, LiveReload. Watch out: Gulp doesn't watch the Tachyons subfolder so changes don't get updated.
+bundle exec jekyll serve
+
+bundle exec jekyll serve --watch --incremental
 
 ## SEO tags
 Provided by https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
