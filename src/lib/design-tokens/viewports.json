@@ -1,0 +1,8 @@
+{
+  "title": "Viewports",
+  "description": "Min and max viewports for fluid type and space scales (pixels).",
+  "min": 330,
+  "mid": 760,
+  "large": 940,
+  "max": 1350
+}

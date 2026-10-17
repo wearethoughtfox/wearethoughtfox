@@ -1,0 +1,59 @@
+/* AUTO-GENERATED — do not edit. Run `npm run tokens` to regenerate. */
+:root {
+
+  /* Colors */
+  --color-primary: #E75253;
+  --color-secondary: #515E67;
+  --color-secondary-alt: #678290;
+  --color-grey: #EEEFF0;
+  --color-body: #515151;
+  --color-dark-gray: #333333;
+  --color-mid-gray: #555555;
+  --color-silver: #999999;
+  --color-light-silver: #AAAAAA;
+  --color-white: #FFFFFF;
+  --color-black-10: rgba(0, 0, 0, 0.1);
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 8rem;
+  --space-3xl: 16rem;
+  --space-s-l: clamp(0.5rem, 0.01rem + 2.35vw, 2rem);
+  --space-m-l: clamp(1rem, 0.68rem + 1.57vw, 2rem);
+
+  /* Type sizes */
+  --size-step-000: 0.75rem;
+  --size-step-00: 0.875rem;
+  --size-step-0: 1rem;
+  --size-step-1: 1.25rem;
+  --size-step-2: 1.5rem;
+  --size-step-3: 2.25rem;
+  --size-step-4: 3rem;
+  --size-step-5: 5rem;
+  --size-step-6: 6rem;
+
+  /* Leading */
+  --leading-flat: 1;
+  --leading-fine: 1.25;
+  --leading-standard: 1.5;
+  --leading-loose: 1.7;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-regular: 400;
+  --font-weight-medium: 500;
+  --font-medium: 500;
+  --font-weight-bold: 700;
+  --font-bold: 700;
+  --font-weight-black: 900;
+  --font-black: 900;
+
+  /* Font stacks */
+  --font-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-display: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}

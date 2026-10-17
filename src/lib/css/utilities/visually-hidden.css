@@ -1,0 +1,28 @@
+/*
+VISUALLY HIDDEN
+https://piccalil.li/quick-tip/visually-hidden/
+Hides content visually while keeping it accessible to screen readers.
+*/
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* Becomes visible on focus (for skip links) */
+.visually-hidden--focusable:focus,
+.visually-hidden--focusable:focus-within {
+  clip: auto;
+  height: auto;
+  overflow: visible;
+  position: static;
+  white-space: normal;
+  width: auto;
+}

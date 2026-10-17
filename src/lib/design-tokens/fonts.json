@@ -1,0 +1,18 @@
+{
+  "title": "Fonts",
+  "description": "System font stack, as on the original site. No web fonts are loaded.",
+  "items": [
+    {
+      "name": "Base",
+      "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'"
+    },
+    {
+      "name": "Display",
+      "value": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    },
+    {
+      "name": "Mono",
+      "value": "ui-monospace, 'SF Mono', Menlo, Consolas, monospace"
+    }
+  ]
+}

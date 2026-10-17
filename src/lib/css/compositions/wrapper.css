@@ -1,0 +1,14 @@
+/*
+WRAPPER
+A centred max-width container with horizontal padding.
+
+Custom properties:
+  --wrapper-max-width (1360px): maximum content width
+*/
+
+.wrapper {
+  margin-inline: auto;
+  max-width: var(--wrapper-max-width, 1360px);
+  padding-inline: var(--gutter);
+  position: relative;
+}

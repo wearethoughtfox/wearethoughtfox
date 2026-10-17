@@ -1,0 +1,33 @@
+/*
+AUTO GRID
+https://every-layout.dev/layouts/grid/
+Responsive grid, no media queries.
+
+Custom properties:
+  --gutter (var(--space-l)): gap between items
+  --grid-min-item-size (16rem): minimum item width
+  --grid-placement (auto-fill): auto-fill or auto-fit
+
+Exceptions via data-layout attribute:
+  [data-layout="50-50"]: two equal columns
+  [data-layout="thirds"]: three equal columns
+*/
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--grid-placement, auto-fill),
+    minmax(var(--grid-min-item-size, 16rem), 1fr)
+  );
+  gap: var(--gutter, var(--space-l));
+}
+
+.grid[data-layout='50-50'] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 50vw, 33rem);
+}
+
+.grid[data-layout='thirds'] {
+  --grid-placement: auto-fit;
+  --grid-min-item-size: clamp(16rem, 33%, 20rem);
+}

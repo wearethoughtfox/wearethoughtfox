@@ -1,0 +1,23 @@
+/*
+REPEL
+Pushes items to opposite ends, wraps on small viewports.
+
+Custom properties:
+  --gutter (var(--space-m)): gap between items
+  --repel-vertical-alignment (center): align-items value
+
+Exception:
+  [data-nowrap]: prevents wrapping
+*/
+
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: var(--repel-vertical-alignment, center);
+  gap: var(--gutter, var(--space-m));
+}
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap;
+}

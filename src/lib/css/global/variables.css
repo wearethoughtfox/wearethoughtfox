@@ -1,0 +1,32 @@
+/* Generated tokens — all --color-*, --space-*, --size-step-*, --leading-*, --font-* */
+@import './_tokens.generated.css';
+
+:root {
+  /* Tachyons-named aliases for the type scale, so templates read like the old markup */
+  --size-f7: var(--size-step-000);
+  --size-f6: var(--size-step-00);
+  --size-f5: var(--size-step-0);
+  --size-f4: var(--size-step-1);
+  --size-f3: var(--size-step-2);
+  --size-f2: var(--size-step-3);
+  --size-f1: var(--size-step-4);
+  --size-subheadline: var(--size-step-5);
+  --size-headline: var(--size-step-6);
+
+  --gutter: var(--space-m);
+  --wrapper-max-width: 96rem; /* mw9 */
+  --measure: 30em;             /* Tachyons .measure */
+
+  --transition-base: 0.15s ease-in;
+
+  --stroke: 1px solid var(--color-black-10);
+  --stroke-grey: 1px solid var(--color-grey);
+
+  --radius-s: 0.125rem;
+  --radius-m: 0.25rem;
+
+  --uppercase-kerning: 0.1em; /* Tachyons .tracked */
+
+  /* Breakpoints (documentation only, custom properties can't be used in media queries):
+     not-small: 30em, large: 50em, as set in the old _variables.scss */
+}

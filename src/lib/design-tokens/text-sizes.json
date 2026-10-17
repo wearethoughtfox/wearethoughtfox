@@ -1,0 +1,15 @@
+{
+  "title": "Text Sizes",
+  "description": "Fixed Tachyons type scale from the original site (root is 18px, so 16 here = 1rem = 18px). Step 000=f7, 00=f6, 0=f5, 1=f4, 2=f3, 3=f2, 4=f1, 5=subheadline, 6=headline.",
+  "items": [
+    { "name": "Step 000", "min": 12, "max": 12 },
+    { "name": "Step 00", "min": 14, "max": 14 },
+    { "name": "Step 0", "min": 16, "max": 16 },
+    { "name": "Step 1", "min": 20, "max": 20 },
+    { "name": "Step 2", "min": 24, "max": 24 },
+    { "name": "Step 3", "min": 36, "max": 36 },
+    { "name": "Step 4", "min": 48, "max": 48 },
+    { "name": "Step 5", "min": 80, "max": 80 },
+    { "name": "Step 6", "min": 96, "max": 96 }
+  ]
+}

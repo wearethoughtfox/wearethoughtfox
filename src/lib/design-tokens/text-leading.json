@@ -1,0 +1,10 @@
+{
+  "title": "Leading",
+  "description": "Line-height values (Tachyons lh-solid, lh-title, lh-copy)",
+  "items": [
+    { "name": "Flat", "value": 1 },
+    { "name": "Fine", "value": 1.25 },
+    { "name": "Standard", "value": 1.5 },
+    { "name": "Loose", "value": 1.7 }
+  ]
+}

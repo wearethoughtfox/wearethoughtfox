@@ -1,0 +1,47 @@
+/*
+SIDEBAR
+https://every-layout.dev/layouts/sidebar/
+Fixed-width sidebar beside flexible main content.
+Stacks when there isn't room for both.
+
+Custom properties:
+  --gutter (var(--space-s-l)): gap between sidebar and content
+  --sidebar-target-width (20rem): sidebar width
+  --sidebar-content-min-width (50%): minimum content area width
+
+Exception:
+  [data-reversed]: puts the sidebar on the right
+  [data-direction='rtl']: alternative RTL mode
+*/
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l));
+}
+
+.sidebar:not([data-direction]) > :first-child {
+  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-grow: 1;
+}
+
+.sidebar:not([data-direction]) > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width, 50%);
+}
+
+.sidebar[data-reversed] {
+  flex-direction: row-reverse;
+}
+
+.sidebar[data-direction='rtl'] > :last-child {
+  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-grow: 1;
+}
+
+.sidebar[data-direction='rtl'] > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: var(--sidebar-content-min-width, 50%);
+}

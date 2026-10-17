@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# SvelteKit / Vite output
+.svelte-kit/
+build/
+dist/
+.vite/
+
+# Production platform output
+.vercel/
+.netlify/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test and coverage output
+coverage/
+playwright-report/
+test-results/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor and tooling noise
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Local caches
+.cache/
+.eslintcache
+*.tsbuildinfo

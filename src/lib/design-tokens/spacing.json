@@ -1,0 +1,15 @@
+{
+  "title": "Spacing",
+  "description": "Fixed Tachyons spacing scale (16 here = 1rem). XS=.25rem S=.5rem M=1rem L=2rem XL=4rem 2XL=8rem 3XL=16rem.",
+  "items": [
+    { "name": "XS", "min": 4, "max": 4 },
+    { "name": "S", "min": 8, "max": 8 },
+    { "name": "M", "min": 16, "max": 16 },
+    { "name": "L", "min": 32, "max": 32 },
+    { "name": "XL", "min": 64, "max": 64 },
+    { "name": "2XL", "min": 128, "max": 128 },
+    { "name": "3XL", "min": 256, "max": 256 },
+    { "name": "S - L", "min": 8, "max": 32 },
+    { "name": "M - L", "min": 16, "max": 32 }
+  ]
+}

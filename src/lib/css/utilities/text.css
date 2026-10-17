@@ -1,0 +1,79 @@
+/*
+TEXT UTILITIES
+The handful of Tachyons helpers the old templates leaned on.
+*/
+
+.f1 { font-size: var(--size-f1); }
+.f2 { font-size: var(--size-f2); }
+.f3 { font-size: var(--size-f3); }
+.f4 { font-size: var(--size-f4); }
+.f5 { font-size: var(--size-f5); }
+.f6 { font-size: var(--size-f6); }
+.f7 { font-size: var(--size-f7); }
+
+.fw4 { font-weight: 400; }
+.fw6 { font-weight: 600; }
+
+.lh-title { line-height: 1.25; }
+.lh-copy  { line-height: 1.5; }
+
+.ttu     { text-transform: uppercase; }
+.tracked { letter-spacing: var(--uppercase-kerning); }
+.i       { font-style: italic; }
+
+.tc { text-align: center; }
+.tr { text-align: end; }
+
+.measure { max-width: 30em; }
+
+.primary      { color: var(--color-primary); }
+.secondary    { color: var(--color-secondary); }
+.customgrey   { color: var(--color-grey); }
+.mid-gray     { color: var(--color-mid-gray); }
+.dark-gray    { color: var(--color-dark-gray); }
+.light-silver { color: var(--color-light-silver); }
+.white        { color: var(--color-white); }
+
+.bg-primary    { background-color: var(--color-primary); }
+.bg-secondary  { background-color: var(--color-secondary); }
+.bg-customgrey { background-color: var(--color-grey); }
+
+.link { text-decoration: none; }
+
+.underline-hover:hover,
+.underline-hover:focus { text-decoration: underline; }
+
+/* Tachyons .dim */
+.dim {
+  opacity: 1;
+  transition: opacity var(--transition-base);
+}
+.dim:hover,
+.dim:focus { opacity: 0.5; transition: opacity var(--transition-base); }
+.dim:active { opacity: 0.8; transition: opacity 0.15s ease-out; }
+
+/* Dashed list used for project types */
+ul.dash {
+  list-style: none;
+  padding-inline-start: 1rem;
+  margin: 0;
+}
+ul.dash > li { position: relative; }
+ul.dash > li::before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -1.1em;
+}
+
+/* Prose written in Markdown (work and blog bodies) */
+.content p { padding-bottom: 1rem; }
+.content a {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.content img { margin-block: 0 1rem; }
+.content h2 { font-size: var(--size-f3); font-weight: 400; }
+.content h3 { font-size: var(--size-f4); font-weight: 400; }
+.content ul,
+.content ol { margin-block-end: 1rem; }
+.content .strike { text-decoration: line-through; }

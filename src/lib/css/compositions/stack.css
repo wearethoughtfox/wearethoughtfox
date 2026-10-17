@@ -1,0 +1,20 @@
+/*
+STACK / FLOW
+https://every-layout.dev/layouts/stack/
+Vertical rhythm: margin between direct children.
+
+Custom properties:
+  --stack-space (1em): gap between siblings
+*/
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.stack > * + * {
+  margin-block-start: var(--stack-space, var(--space-m));
+}
+
+.stack--recursive * + * {
+  margin-block-start: var(--stack-space, var(--space-m));
+}

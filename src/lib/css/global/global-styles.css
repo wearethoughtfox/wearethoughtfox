@@ -1,0 +1,122 @@
+/*
+  Global styles: the typography and defaults of the Tachyons-based site,
+  expressed as low-specificity element rules.
+*/
+
+html {
+  font-size: 18px;
+  line-height: 1.5;
+  background: var(--color-white);
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--color-white);
+  color: var(--color-body);
+  font-family: var(--font-base);
+  font-size: var(--size-f5);
+  line-height: var(--leading-standard);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  margin-block: 0 0.5rem;
+  line-height: 1.25;
+  color: var(--color-secondary);
+  text-rendering: optimizeLegibility;
+}
+
+h1 { font-size: var(--size-f1); font-weight: 600; }
+h2 { font-size: var(--size-f2); font-weight: 700; }
+h3 { font-size: var(--size-f3); font-weight: 700; }
+h4 { font-size: var(--size-f4); font-weight: 700; }
+h5 { font-size: var(--size-f5); }
+h6 { font-size: var(--size-f6); }
+
+p {
+  margin-block: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+/* Links inside running copy are coral and dim on hover, as before */
+p a,
+li a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+p a:hover,
+li a:hover,
+p a:focus,
+li a:focus {
+  opacity: 0.5;
+}
+
+ul:not([class]),
+ol:not([class]) {
+  padding-inline-start: 2rem;
+  margin-block: 0 1rem;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: var(--size-f6);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+blockquote {
+  font-size: var(--size-f5);
+  padding-inline-start: 2rem;
+  margin: 0 0 2rem 0.25rem;
+  font-style: italic;
+  color: var(--color-mid-gray);
+  border-inline-start: 0.25rem solid var(--color-silver);
+}
+
+blockquote p:last-child {
+  padding-bottom: 0;
+}
+
+cite {
+  font-size: var(--size-f6);
+  text-transform: uppercase;
+  letter-spacing: var(--uppercase-kerning);
+  font-style: normal;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+[id] {
+  scroll-margin-block-start: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

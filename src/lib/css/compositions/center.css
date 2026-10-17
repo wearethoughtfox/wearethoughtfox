@@ -1,0 +1,29 @@
+/*
+CENTER
+https://every-layout.dev/layouts/center/
+Horizontally centred container with optional gutters.
+
+Custom properties:
+  --center-max-width (var(--measure)): maximum width
+  --gutter: horizontal padding (applied when data-gutters is set)
+
+Exceptions:
+  [data-gutters]: adds horizontal padding equal to --gutter
+  [data-intrinsic]: centres based on content width (flexbox column)
+*/
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-width: var(--center-max-width, var(--measure, 60ch));
+}
+
+.center[data-gutters] {
+  padding-inline: var(--gutter, var(--space-m));
+}
+
+.center[data-intrinsic] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

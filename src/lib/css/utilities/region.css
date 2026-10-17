@@ -1,0 +1,9 @@
+/*
+REGION
+Consistent block padding for page sections.
+Override --region-space per section for variation.
+*/
+
+.region {
+  padding-block: var(--region-space, var(--space-xl));
+}

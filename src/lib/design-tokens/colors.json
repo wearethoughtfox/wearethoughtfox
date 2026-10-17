@@ -1,0 +1,17 @@
+{
+  "title": "Colors",
+  "description": "We Are Thought Fox palette, carried over unchanged from the Jekyll/Tachyons site. Primary is the coral red, Secondary the slate blue-grey.",
+  "items": [
+    { "name": "Primary", "value": "#E75253" },
+    { "name": "Secondary", "value": "#515E67" },
+    { "name": "Secondary Alt", "value": "#678290" },
+    { "name": "Grey", "value": "#EEEFF0" },
+    { "name": "Body", "value": "#515151" },
+    { "name": "Dark Gray", "value": "#333333" },
+    { "name": "Mid Gray", "value": "#555555" },
+    { "name": "Silver", "value": "#999999" },
+    { "name": "Light Silver", "value": "#AAAAAA" },
+    { "name": "White", "value": "#FFFFFF" },
+    { "name": "Black 10", "value": "rgba(0, 0, 0, 0.1)" }
+  ]
+}

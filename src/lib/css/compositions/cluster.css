@@ -1,0 +1,18 @@
+/*
+CLUSTER
+https://every-layout.dev/layouts/cluster/
+Flexible inline items with consistent gap.
+
+Custom properties:
+  --gutter (var(--space-m)): space between items
+  --cluster-horizontal-alignment (flex-start): justify-content value
+  --cluster-vertical-alignment (center): align-items value
+*/
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-m));
+  justify-content: var(--cluster-horizontal-alignment, flex-start);
+  align-items: var(--cluster-vertical-alignment, center);
+}

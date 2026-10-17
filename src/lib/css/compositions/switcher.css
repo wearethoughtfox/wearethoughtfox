@@ -1,0 +1,27 @@
+/*
+SWITCHER
+https://every-layout.dev/layouts/switcher/
+Lay 2 items side-by-side until the container is too narrow.
+
+Custom properties:
+  --gutter (var(--space-l)): gap between items
+  --switcher-target-container-width (40rem): breakpoint threshold
+  --switcher-vertical-alignment (flex-start): align-items value
+*/
+
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-l));
+  align-items: var(--switcher-vertical-alignment, flex-start);
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switcher-target-container-width, 40rem) - 100%) * 999);
+}
+
+/* More than 2 items go full width */
+.switcher > :nth-child(n + 3) {
+  flex-basis: 100%;
+}
