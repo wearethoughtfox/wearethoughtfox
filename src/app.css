@@ -1,24 +1,26 @@
 /* === GLOBAL === */
-@import '$lib/css/global/reset.css';
+@import '@thoughtfox/toolkit/layout/reset.css';
 @import '$lib/css/global/fonts.css';
 @import '$lib/css/global/variables.css';
 @import '$lib/css/global/global-styles.css';
 
 /* === COMPOSITIONS === */
-@import '$lib/css/compositions/stack.css';
-@import '$lib/css/compositions/cluster.css';
+/* Shared from @thoughtfox/toolkit. sidebar, grid and reel stay local:
+   their toolkit versions build to different CSS (see README). */
+@import '@thoughtfox/toolkit/layout/compositions/stack.css';
+@import '@thoughtfox/toolkit/layout/compositions/cluster.css';
 @import '$lib/css/compositions/sidebar.css';
 @import '$lib/css/compositions/grid.css';
-@import '$lib/css/compositions/switcher.css';
-@import '$lib/css/compositions/cover.css';
-@import '$lib/css/compositions/center.css';
+@import '@thoughtfox/toolkit/layout/compositions/switcher.css';
+@import '@thoughtfox/toolkit/layout/compositions/cover.css';
+@import '@thoughtfox/toolkit/layout/compositions/center.css';
 @import '$lib/css/compositions/reel.css';
-@import '$lib/css/compositions/frame.css';
-@import '$lib/css/compositions/wrapper.css';
-@import '$lib/css/compositions/repel.css';
+@import '@thoughtfox/toolkit/layout/compositions/frame.css';
+@import '@thoughtfox/toolkit/layout/compositions/wrapper.css';
+@import '@thoughtfox/toolkit/layout/compositions/repel.css';
 
 /* === UTILITIES === */
-@import '$lib/css/utilities/region.css';
-@import '$lib/css/utilities/visually-hidden.css';
+@import '@thoughtfox/toolkit/layout/utilities/region.css';
+@import '@thoughtfox/toolkit/layout/utilities/visually-hidden.css';
 @import '$lib/css/utilities/text.css';
 @import '$lib/css/utilities/reveal.css';

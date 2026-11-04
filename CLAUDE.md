@@ -19,12 +19,12 @@ This project uses **CUBE CSS** (Composition Utility Block Exception) with **Ever
 
 | Layer | Location | Rule |
 |---|---|---|
-| Reset | `src/lib/css/global/reset.css` | Global, never override |
+| Reset | `@thoughtfox/toolkit/layout/reset.css` (shared) | Global, never override |
 | Tokens (generated) | `src/lib/css/global/_tokens.generated.css` | Never edit — run `npm run tokens` |
 | Variables | `src/lib/css/global/variables.css` | Manual additions on top of tokens |
 | Global styles | `src/lib/css/global/global-styles.css` | Low-specificity, element selectors |
-| Compositions | `src/lib/css/compositions/*.css` | Every Layout patterns — plain class names |
-| Utilities | `src/lib/css/utilities/*.css` | Single-purpose classes |
+| Compositions | `@thoughtfox/toolkit/layout/compositions/*.css`; `sidebar`, `grid` and `reel` stay in `src/lib/css/compositions/` (see README) | Every Layout patterns — plain class names |
+| Utilities | `region` and `visually-hidden` from `@thoughtfox/toolkit/layout/utilities/`; `text` and `reveal` in `src/lib/css/utilities/` | Single-purpose classes |
 | Blocks | Scoped `<style>` in `.svelte` files | Component-specific styles |
 
 ### CUBE layers summary
@@ -57,7 +57,7 @@ Token files:
 
 Each layout pattern is both:
 1. A plain CSS class — use directly in markup: `<div class="cluster">`
-2. A Svelte component — use for prop-based configuration: `<Cluster gap="var(--space-l)">`
+2. A Svelte component from `@thoughtfox/toolkit/layout` — use for prop-based configuration: `<Cluster gap="var(--space-l)">`
 
 The components set CSS custom properties via `style:--prop={value}`. The CSS class defines the behaviour; the custom property overrides the default.
 
@@ -88,7 +88,7 @@ The components set CSS custom properties via `style:--prop={value}`. The CSS cla
 
 ## Animations
 
-- Import `prefersReducedMotion` from `$lib/stores/motion.js` to gate Svelte transitions
+- Import `prefersReducedMotion` from `@thoughtfox/toolkit/motion/reduced-motion.js` to gate Svelte transitions
 - CSS transitions go inside `@media (prefers-reduced-motion: no-preference)` blocks in scoped styles
 - Use the `reveal` action from `$lib/actions/reveal.js` for scroll-triggered reveals paired with CSS animations
 
