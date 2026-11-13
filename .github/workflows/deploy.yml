@@ -1,0 +1,127 @@
+# Deploys to Coolify on every push to main, including the commits Sveltia
+# makes when a post is saved. The same workflow as Root's
+# (wearethoughtfox/root, .github/workflows/deploy.yml), where the reasons are
+# written up in full.
+#
+# In short: Coolify sits behind Tailscale, so GitHub can't reach its webhook.
+# The runner joins the tailnet as a short-lived node and calls the deploy API
+# over it. The run then waits for the build and for the site to answer, so a
+# green run means the site is deployed and a red one means it is not.
+#
+# Before the first run:
+#   1. Create the application in Coolify and paste its UUID into APP_UUID.
+#   2. Set SITE_URL to the address the application serves.
+#   3. Add three repository secrets: TS_OAUTH_CLIENT_ID, TS_OAUTH_SECRET and
+#      COOLIFY_TOKEN (the token needs read as well as deploy).
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+# The tailnet address and the application UUID are not credentials and are
+# only reachable from the tailnet. The API token is the secret.
+env:
+  COOLIFY_URL: http://100.116.49.103:8000
+  APP_UUID: ''
+  SITE_URL: ''
+
+jobs:
+  deploy:
+    name: Trigger Coolify deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # Fails with a plain message until the two values above are filled in,
+      # rather than as a confusing curl error further down.
+      - name: Check the workflow is configured
+        run: |
+          if [ -z "$APP_UUID" ] || [ -z "$SITE_URL" ]; then
+            echo "::error::APP_UUID and SITE_URL are empty in .github/workflows/deploy.yml. Create the application in Coolify, then fill both in."
+            exit 1
+          fi
+
+      # Joins the tailnet as an ephemeral node, removed when the job ends.
+      # `ping` waits for the host to answer before the next step.
+      - name: Connect to Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+          ping: 100.116.49.103
+
+      # A 200 here means Coolify accepted the request, nothing more. The
+      # response may wrap its deployment in a `deployments` array or return a
+      # flat `deployment_uuid`, so this reads both shapes.
+      - name: Start the deploy
+        id: start
+        env:
+          COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
+        run: |
+          response=$(curl --fail-with-body --silent --show-error --max-time 30 \
+            --request POST \
+            --header "Authorization: Bearer $COOLIFY_TOKEN" \
+            "$COOLIFY_URL/api/v1/deploy?uuid=$APP_UUID&force=false")
+          echo "$response"
+          deployment=$(echo "$response" | jq -r \
+            '(.deployments[0].deployment_uuid // .deployment_uuid) // empty')
+          if [ -z "$deployment" ]; then
+            echo "::error::Coolify accepted the request but returned no deployment UUID, so this run cannot tell whether the build succeeds. Check Coolify."
+            exit 1
+          fi
+          echo "deployment=$deployment" >> "$GITHUB_OUTPUT"
+
+      # Only `finished` is treated as success and only `failed` and
+      # `cancelled…` as failure. Anything else is taken as still running, so
+      # an unknown status never reads as a successful deploy.
+      - name: Wait for the build
+        env:
+          COOLIFY_TOKEN: ${{ secrets.COOLIFY_TOKEN }}
+          DEPLOYMENT: ${{ steps.start.outputs.deployment }}
+        run: |
+          for attempt in $(seq 1 60); do
+            response=$(curl --silent --show-error --max-time 20 \
+              --write-out '\n%{http_code}' \
+              --header "Authorization: Bearer $COOLIFY_TOKEN" \
+              "$COOLIFY_URL/api/v1/deployments/$DEPLOYMENT")
+            code=$(echo "$response" | tail -n1)
+            case "$code" in
+              401|403)
+                echo "$response" | sed '$d'
+                echo "::error::Coolify refused to report the deployment ($code). COOLIFY_TOKEN needs the read permission as well as deploy. Coolify → Keys & Tokens → API Tokens."
+                exit 1 ;;
+            esac
+            status=$(echo "$response" | sed '$d' | jq -r '.status // empty')
+            echo "$(date +%T) ${status:-no status (HTTP $code)}"
+            case "$status" in
+              finished) exit 0 ;;
+              failed|cancelled*) echo "::error::Coolify build $status. The build log is in Coolify under this application's deployments."; exit 1 ;;
+            esac
+            sleep 15
+          done
+          echo "::error::Build still not finished after 15 minutes"
+          exit 1
+
+      # A finished build can take a moment to start serving, and a container
+      # that builds but won't boot would otherwise pass as a deploy.
+      - name: Check the site answers
+        run: |
+          for attempt in $(seq 1 12); do
+            code=$(curl --silent --output /dev/null --write-out '%{http_code}' --max-time 15 "$SITE_URL" || true)
+            echo "$(date +%T) $code"
+            case "$code" in 2*|3*) exit 0 ;; esac
+            sleep 10
+          done
+          echo "::error::$SITE_URL didn't answer after the deploy (last status $code)"
+          exit 1
+
+      - name: Note the result
+        run: echo "Deployed $GITHUB_SHA and $SITE_URL answered." >> "$GITHUB_STEP_SUMMARY"

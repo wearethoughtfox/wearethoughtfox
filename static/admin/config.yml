@@ -1,0 +1,136 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Sveltia CMS configuration, following Root's (root-pilates-cafe) with the
+# parts a one-editor site doesn't need left out.
+#
+# Every front matter key the old Jekyll files carry is declared below, most of
+# them hidden. A key missing from this config is dropped when an entry is
+# saved, and `permalink` in particular decides a post's URL.
+
+backend:
+  name: github
+  repo: wearethoughtfox/wearethoughtfox
+  branch: main
+  # The same Cloudflare Worker that signs editors in to Root's CMS
+  # (https://github.com/sveltia/sveltia-cms-auth). Its ALLOWED_DOMAINS must
+  # include wherever this /admin/ is served from.
+  base_url: https://sveltia-cms-auth.rob-031.workers.dev
+
+# No `publish_mode`: a save commits straight to main, and the push deploys
+# (.github/workflows/deploy.yml). Root uses editorial_workflow with preview
+# builds because other people edit it. Here there is one editor.
+
+output:
+  # An optional field left blank is left out of the front matter rather than
+  # written as an empty string.
+  omit_empty_optional_fields: true
+
+# Images are plain files under /static, referenced as /images/name.jpg.
+media_folder: /static/images
+public_folder: /images
+
+# The browser shrinks and converts each upload before it is committed, so a
+# phone photo never reaches the repo at full size.
+media_libraries:
+  all:
+    transformations:
+      raster_image:
+        format: webp
+        quality: 85
+        width: 2048
+        height: 2048
+  default:
+    config:
+      max_file_size: 26214400
+      slugify_filename: true
+
+collections:
+  - name: blog
+    label: Blog
+    label_singular: Post
+    folder: /src/lib/content/blog
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    # The date prefix is how the site orders posts when a file has no date,
+    # and the rest of the name is the URL (src/lib/content/parse.js).
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}}'
+    sortable_fields:
+      fields: [date, title]
+      default:
+        field: date
+        direction: descending
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: date, label: Date, widget: datetime }
+      - name: excerpt
+        label: Excerpt
+        widget: string
+        required: false
+        hint: One line for the blog list and search results. Left blank, the first 160 characters of the post are used.
+      - { name: tags, label: Tags, widget: list, required: false }
+      - { name: image, label: Image, widget: image, required: false }
+      - { name: body, label: Body, widget: markdown }
+      # Kept so a save doesn't remove them. The site reads permalink and slug
+      # to build the URL; the rest are leftovers from Jekyll, Tumblr and
+      # WordPress.
+      - { name: layout, widget: hidden, default: blog }
+      - { name: categories, widget: hidden, default: [Blog] }
+      - { name: permalink, widget: hidden }
+      - { name: slug, widget: hidden }
+      - { name: author, widget: hidden }
+      - { name: id, widget: hidden }
+      - { name: guid, widget: hidden }
+      - { name: comments, widget: hidden }
+      - { name: slideshow, widget: hidden }
+      - { name: medium_post, widget: hidden }
+      - { name: wordpress_id, widget: hidden }
+      - { name: tumblr_new-icc_permalink, widget: hidden }
+      - { name: tumblr_new-icc_id, widget: hidden }
+
+  - name: work
+    label: Work
+    label_singular: Project
+    folder: /src/lib/content/work
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}}'
+    sortable_fields:
+      fields: [date, title]
+      default:
+        field: date
+        direction: descending
+    fields:
+      - { name: title, label: Title, widget: string }
+      - name: slug
+        label: URL slug
+        widget: string
+        hint: The last part of the address, /work/this-part/. Changing it on a published project breaks links to it.
+      - { name: date, label: Date, widget: datetime }
+      - name: excerpt
+        label: Excerpt
+        widget: string
+        hint: One line shown under the title on the work list.
+      - name: image
+        label: Square image
+        widget: image
+        hint: Shown on the work list and the home page.
+      - name: type
+        label: Services
+        widget: list
+        required: false
+        hint: What the studio did, such as Research or Digital development.
+      - name: featured
+        label: Show on the home page
+        widget: boolean
+        required: false
+      - { name: body, label: Body, widget: markdown }
+      # Kept so a save doesn't remove them.
+      - { name: layout, widget: hidden, default: work }
+      - { name: categories, widget: hidden, default: [Work] }
+      - { name: services, widget: hidden }
+      - { name: slideshow, widget: hidden }
+      - { name: mainimage, widget: hidden }
