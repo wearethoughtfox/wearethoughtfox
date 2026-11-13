@@ -7,8 +7,9 @@ SvelteKit port of the 2017–2020 Jekyll/Tachyons site for [wearethoughtfox.com]
 ```
 npm install
 npm run dev        # http://localhost:5173
-npm run build      # static output in ./build
+npm run build      # prerendered pages and a Node server in ./build
 npm run preview
+npm start          # run the built server, as Coolify does
 ```
 
 ## Content
@@ -41,10 +42,22 @@ All URLs keep trailing slashes and match the old site: `/`, `/work/`, `/work/<sl
 
 ## Not carried over
 
-- Netlify CMS admin (`/admin/`) and the Netlify Identity widget.
+- Netlify CMS and the Netlify Identity widget. `/admin/` is now Sveltia CMS (see below).
 - The service worker.
 - Google Analytics / Drift chat (neither was wired up in the source).
 
 ## Deploy
 
-`@sveltejs/adapter-static` writes a fully prerendered site to `build/` with `404.html` as fallback. Publish `build/` on Netlify or any static host.
+The site follows Root's setup (`wearethoughtfox/root`): Coolify builds it and runs `npm start`, behind a Cloudflare Tunnel.
+
+- `@sveltejs/adapter-node` builds a Node server. Every page is still prerendered; the server hands out those files and renders the 404 page.
+- `.github/workflows/deploy.yml` deploys each push to `main`. It needs `APP_UUID` and `SITE_URL` filled in and three repository secrets, listed at the top of the file.
+- Node is pinned in `package.json` (`engines`), the same version as Root.
+
+## Editing content
+
+`/admin/` is Sveltia CMS (`static/admin/`). It edits the Markdown in `src/lib/content/blog` and `src/lib/content/work`, and a save commits straight to `main`, which deploys.
+
+- Sign-in goes through the Cloudflare Worker Root uses. Its `ALLOWED_DOMAINS` must include this site's address.
+- Every front matter key is declared in `static/admin/config.yml`, most of them hidden. A key missing from the config is dropped when an entry is saved, so add new keys there first.
+- Content is read on the server (`+page.server.js`), so the Markdown and its parsers are not sent to the browser.

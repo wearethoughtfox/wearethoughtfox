@@ -1,4 +1,5 @@
 import { marked } from 'marked';
+import { parse as parseYaml } from 'yaml';
 
 marked.use({ gfm: true, breaks: false });
 
@@ -14,36 +15,32 @@ export function decodeEntities(s) {
     .replace(/&nbsp;/g, ' ');
 }
 
-function unquote(v) {
-  v = v.trim();
-  if ((v.startsWith("'") && v.endsWith("'")) || (v.startsWith('"') && v.endsWith('"'))) {
-    return v.slice(1, -1).replace(/''/g, "'");
-  }
-  return v;
+/** Decode entities in a string, or in each string of a list */
+function decodeValue(v) {
+  if (Array.isArray(v)) return v.map(decodeValue);
+  return decodeEntities(v);
 }
 
 /**
- * Minimal YAML front matter parser covering what the Jekyll content uses:
- * scalar keys, quoted strings, and simple `- item` lists.
+ * Front matter parser. The YAML is read by the `yaml` package, the library
+ * Sveltia CMS writes with, so anything the CMS saves (a long excerpt folded
+ * over several lines, a quoted string, a nested list) reads back correctly.
+ *
+ * The `failsafe` schema keeps every scalar a string, as the hand-written
+ * parser this replaces did: a date stays the text that was typed, and
+ * `featured: true` stays 'true'. The loaders already expect that.
+ * `uniqueKeys: false` lets an old Jekyll file with a repeated key through,
+ * the last one winning.
  */
 export function parseFrontMatter(raw) {
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
   if (!m) return { data: {}, body: raw };
+  const parsed = parseYaml(m[1], { schema: 'failsafe', uniqueKeys: false }) ?? {};
   const data = {};
-  let currentKey = null;
-  for (const line of m[1].split(/\r?\n/)) {
-    const li = line.match(/^\s*-\s+(.*)$/);
-    if (li && currentKey) {
-      if (!Array.isArray(data[currentKey])) data[currentKey] = [];
-      data[currentKey].push(decodeEntities(unquote(li[1])));
-      continue;
-    }
-    const kv = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-    if (kv) {
-      currentKey = kv[1];
-      const v = kv[2].trim();
-      data[currentKey] = v === '' ? undefined : decodeEntities(unquote(v));
-    }
+  for (const [key, value] of Object.entries(parsed)) {
+    // An empty value is left undefined, not null or '', so `||` fallbacks
+    // in the loaders behave as before.
+    data[key] = value === null || value === '' ? undefined : decodeValue(value);
   }
   return { data, body: raw.slice(m[0].length) };
 }

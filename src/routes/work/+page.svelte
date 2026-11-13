@@ -1,8 +1,10 @@
 <script>
   import Seo from '$lib/components/blocks/Seo.svelte';
   import WorkGrid from '$lib/components/blocks/WorkGrid.svelte';
-  import { workNewestFirst } from '$lib/content/work.js';
   import { site } from '$lib/content/site.js';
+
+  /** @type {{ work: Array<{slug:string,title:string,image:string,excerpt:string,year:number}> }} */
+  export let data;
 </script>
 
 <Seo
@@ -12,7 +14,7 @@
     '@context': 'https://schema.org',
     '@type': 'ItemList',
     name: 'Work',
-    itemListElement: workNewestFirst.map((w, i) => ({
+    itemListElement: data.work.map((w, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       name: w.title,
@@ -22,4 +24,4 @@
 />
 
 <h1 class="visually-hidden">Work</h1>
-<WorkGrid items={workNewestFirst} meta="year" />
+<WorkGrid items={data.work} meta="year" />
