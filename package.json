@@ -6,11 +6,12 @@
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "tokens": "node scripts/generate-tokens.js"
+    "tokens": "node node_modules/@thoughtfox/toolkit/tokens/generate-tokens.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.0",
     "@sveltejs/kit": "^2.0.0",
+    "@thoughtfox/toolkit": "file:../toolkit",
     "cssnano": "^7.0.0",
     "marked": "^15.0.0",
     "postcss": "^8.4.0",

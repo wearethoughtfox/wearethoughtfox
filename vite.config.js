@@ -1,13 +1,7 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import { generateTokens } from './scripts/generate-tokens.js';
+import { tokensPlugin } from '@thoughtfox/toolkit/tokens/vite-plugin.js';
 
 export default defineConfig({
-  plugins: [
-    sveltekit(),
-    {
-      name: 'tokens',
-      buildStart: generateTokens
-    }
-  ]
+  plugins: [tokensPlugin(), sveltekit()]
 });
