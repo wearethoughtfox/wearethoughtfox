@@ -6,7 +6,9 @@
   import { typed } from '$lib/actions/typed.js';
   import { reveal } from '$lib/actions/reveal.js';
   import { site, organizationSchema } from '$lib/content/site.js';
-  import { featuredWork } from '$lib/content/work.js';
+
+  /** @type {{ featuredWork: Array<{slug:string,title:string,image:string,excerpt:string,year:number}> }} */
+  export let data;
 
   let bounce = false;
   let statementShown = false;
@@ -55,7 +57,7 @@
   </div>
 </section>
 
-<WorkGrid items={featuredWork} meta="excerpt" animate />
+<WorkGrid items={data.featuredWork} meta="excerpt" animate />
 
 <section id="sectors" class="clients">
   <div class="clients__inner">

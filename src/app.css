@@ -4,21 +4,6 @@
 @import '$lib/css/global/variables.css';
 @import '$lib/css/global/global-styles.css';
 
-/* === COMPOSITIONS === */
-/* Shared from @thoughtfox/toolkit. sidebar, grid and reel stay local:
-   their toolkit versions build to different CSS (see README). */
-@import '@thoughtfox/toolkit/layout/compositions/stack.css';
-@import '@thoughtfox/toolkit/layout/compositions/cluster.css';
-@import '$lib/css/compositions/sidebar.css';
-@import '$lib/css/compositions/grid.css';
-@import '@thoughtfox/toolkit/layout/compositions/switcher.css';
-@import '@thoughtfox/toolkit/layout/compositions/cover.css';
-@import '@thoughtfox/toolkit/layout/compositions/center.css';
-@import '$lib/css/compositions/reel.css';
-@import '@thoughtfox/toolkit/layout/compositions/frame.css';
-@import '@thoughtfox/toolkit/layout/compositions/wrapper.css';
-@import '@thoughtfox/toolkit/layout/compositions/repel.css';
-
 /* === UTILITIES === */
 @import '@thoughtfox/toolkit/layout/utilities/region.css';
 @import '@thoughtfox/toolkit/layout/utilities/visually-hidden.css';
